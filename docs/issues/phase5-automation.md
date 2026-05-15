@@ -39,7 +39,7 @@ Acceptance criteria:
 - [x] `docker build -t grocery-pricing .` builds an image in a Docker-enabled
   environment.
 - [x] `docker run --rm grocery-pricing` runs the fixture pipeline.
-- [ ] HITL: verify Docker locally where Docker is installed and approved.
+- [x] HITL: verify Docker locally where Docker is installed and approved.
 
 ## 3. Cron-safe logging
 

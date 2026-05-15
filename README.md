@@ -89,5 +89,12 @@ Cron plan: [docs/operations/cron-plan.md](docs/operations/cron-plan.md)
 
 Phase 5 issue breakdown: [docs/issues/phase5-automation.md](docs/issues/phase5-automation.md)
 
-HITL items remain for installing cron, verifying Docker locally, and choosing a
-real pre-commit hook system after this folder is initialized as a git repo.
+HITL items remain for installing cron and choosing a real pre-commit hook
+system.
+
+Docker Desktop has been verified locally on this machine with:
+
+```bash
+docker build -t grocery-pricing .
+docker run --rm grocery-pricing
+```
