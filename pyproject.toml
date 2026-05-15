@@ -1,0 +1,8 @@
+[project]
+name = "grocery-pricing"
+version = "0.1.0"
+description = "Fixture-first grocery pricing pipeline"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["grocery_pricing"]
