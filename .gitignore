@@ -5,4 +5,11 @@ __pycache__/
 .ruff_cache/
 .venv/
 .DS_Store
+
+# Local scratch artifacts (HTML captures, EDA images, model outputs)
 artifacts/
+
+# Track weekly price snapshots — intentionally NOT ignored
+!data/
+!data/snapshots/
+!data/snapshots/**

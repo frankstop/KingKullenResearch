@@ -1,8 +1,15 @@
 [project]
 name = "grocery-pricing"
 version = "0.1.0"
-description = "Fixture-first grocery pricing pipeline"
+description = "Longitudinal grocery pricing pipeline for King Kullen"
 requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "wordcloud",
+]
 
 [tool.setuptools]
 packages = ["grocery_pricing"]
