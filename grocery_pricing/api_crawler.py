@@ -13,7 +13,10 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
 def fetch_api(category_id: str, store_id: int = 23, skip: int = 0, take: int = 10) -> dict:
-    url = f"https://storefrontgateway.shopkingkullen.com/api/stores/{store_id}/categories/{category_id}/groupby?take={take}&skip={skip}&productCount=100"
+    # productCount=1000: captures all products per sub-category group in one shot.
+    # The groupby endpoint's `skip`/`take` paginate through *groups*, not products.
+    # Setting productCount high eliminates the 100-item per-group cap we previously hit.
+    url = f"https://storefrontgateway.shopkingkullen.com/api/stores/{store_id}/categories/{category_id}/groupby?take={take}&skip={skip}&productCount=1000"
     req = urllib.request.Request(url, headers={
         "User-Agent": USER_AGENT,
         "x-site-host": "https://www.shopkingkullen.com",
@@ -74,7 +77,9 @@ def extract_items(api_data: dict, store: str, timestamp: str) -> list[ScrapedIte
             
     return extracted
 
-def run_crawler(output_path: Path, store_id: int = 23, cat_file: Path | None = None):
+from typing import Optional
+
+def run_crawler(output_path: Path, store_id: int = 23, cat_file: Optional[Path] = None):
     if cat_file is None:
         # Discover categories dynamically from the homepage
         from grocery_pricing.discovery import run_discovery
