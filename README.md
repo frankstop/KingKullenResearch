@@ -7,7 +7,7 @@
 
 An automated, production-grade longitudinal grocery pricing data pipeline and predictive modeling suite. Tracks over **20,000 unique products** across **420+ sub-categories** weekly, using a reverse-engineered Freshop storefront gateway API to build historical snapshots, run regularized regression models, and surface pricing anomalies.
 
-The live analytics dashboard is hosted via **GitHub Pages** at `docs/index.html`.
+The live analytics dashboard is hosted via **GitHub Pages** at [`docs/index.html`](https://frankstop.github.io/KingKullenResearch/).
 
 ---
 
