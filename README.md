@@ -2,18 +2,20 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Pipeline Status](https://img.shields.io/badge/pipeline-GitHub%20Actions-success.svg)](https://github.com/frankstop/KingKullenResearch/actions)
+[![Weekly pipeline](https://github.com/frankstop/KingKullenResearch/actions/workflows/weekly_crawl.yml/badge.svg)](https://github.com/frankstop/KingKullenResearch/actions/workflows/weekly_crawl.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-An automated, production-grade longitudinal grocery pricing data pipeline and predictive modeling suite. Tracks over **20,000 unique products** across **420+ sub-categories** weekly, using a reverse-engineered Freshop storefront gateway API to build historical snapshots, run regularized regression models, and surface pricing anomalies.
+An automated longitudinal grocery pricing pipeline. It collects over **20,000 catalog records** representing more than **16,000 unique UPCs** weekly through King Kullen's Freshop storefront gateway API, compares every new snapshot with the prior week, and publishes concrete price movements.
 
-The live analytics dashboard is hosted via **GitHub Pages** at [`docs/index.html`](https://frankstop.github.io/KingKullenResearch/).
+The project overview and [price time series](https://frankstop.github.io/KingKullenResearch/weekly-report.html) are published through GitHub Pages. The time-series page shows catalog health and every week-over-week comparison, then drills into the latest price movers.
+
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the raw → derived → published contracts and failure rules.
 
 ---
 
 ## 🏛 System Architecture
 
-The entire pipeline is automated using **GitHub Actions** running on a weekly cron cycle. The architecture consists of the dynamic discovery, crawled API ingestion, regularized model fitting, anomaly flagging, and automated analytics compilation stages:
+The production pipeline is automated with **GitHub Actions** on a weekly cron cycle. It separates dynamic discovery and API ingestion from time-series derivation and publication:
 
 ```mermaid
 flowchart TD
@@ -21,10 +23,10 @@ flowchart TD
     B --> C[discovery.py: Homepage Nav Category Tree Discovery]
     C --> D[api_crawler.py: Fetch Freshop API items via sub-category groupby]
     D --> E[Dated Snapshot: data/snapshots/YYYY-MM-DD.jsonl]
-    E --> F[test_model.py: Train TF-IDF + OHE Ridge Regression Model]
-    E --> G[modeling.py: Run same-day peer-median anomaly detection]
-    F & G --> H[analysis_view.py: Compile analytics dashboard]
-    H --> I[GitHub Pages: docs/index.html]
+    E --> F[weekly_report.py: Compare with prior snapshot]
+    F --> G[Price changes, additions, removals, sale rate]
+    G --> H[Publish HTML and JSON report]
+    H --> I[GitHub Pages: weekly-report.html]
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px
     style I fill:#bfb,stroke:#333,stroke-width:2px
@@ -43,17 +45,19 @@ The repository's production code is structured into highly cohesive modules:
 ### 2. Versioned Snapshots (Git-as-a-Database)
 - All successful runs output dated, newline-delimited JSON (**JSONL**) catalogs under `data/snapshots/YYYY-MM-DD.jsonl`. This longitudinal historical catalog serves as our training data lake.
 
-### 3. Predictive Machine Learning
-- **`scratch/test_model.py`**: Trains our production price regression model. Sets up a scikit-learn `Pipeline` utilizing `ColumnTransformer`:
+### 3. Predictive Machine Learning Experiment
+- The checked-in model experiment uses a scikit-learn `Pipeline` with `ColumnTransformer`:
   - **TF-IDF Vectorizer** (1,000 max features) extracts semantic pricing signals from raw product names (e.g., "organic", "oz").
   - **One-Hot Encoder** maps categorical features from primary category tags.
   - **Ridge Regression** ($L_2$ regularization, $\alpha=1.0$) fits the sparse, high-dimensional space, yielding an $R^2 \approx 0.590$.
 
-### 4. Price Anomaly Detection
-- **`grocery_pricing/modeling.py`**: Implements a relative competitor anomaly rule. Grouping price points by day, it computes same-day peer medians and flags promotions falling $25\%$ or more below the median as a `PriceDropAnomaly`.
+The weekly automation does not currently retrain this model. It is kept separate until automated validation can prove a newly trained model is better.
 
-### 5. Interactive Glass-Box Dashboard
-- **`grocery_pricing/analysis_view.py`**: Reads raw snapshot runs and renders `docs/index.html` with category shelf space, price distribution boxplots, discount percentages, and model residual diagnostics.
+### 4. Weekly Price Change Report
+- **`grocery_pricing/weekly_report.py`**: Compares the latest two snapshots by UPC, calculates price increases and decreases, catalog additions and removals, sale rate, and historical snapshot health.
+- It also derives a complete time series across all snapshots, including product count, average price, sale rate, matched coverage, and change counts for every adjacent week.
+- Each scheduled run publishes `docs/weekly-report.html` for people and `docs/data/weekly-summary.json` as the stable machine-readable contract for downstream use.
+- Publication fails if the newest crawl matches less than 80% of the prior catalog, preventing a partial crawl from silently becoming the new baseline.
 
 ---
 
@@ -89,6 +93,10 @@ To compile the glass-box analyst dashboard:
 ```bash
 python3 -m grocery_pricing.analysis_view
 ```
+To generate the current weekly comparison:
+```bash
+python3 -m grocery_pricing.weekly_report
+```
 
 ### 3. Verification & CI Checks
 To run the automated unittest suite (reconciliation, Scrapy-style HTML parser fallback, and anomaly flags):
@@ -106,7 +114,7 @@ python3 scripts/check.py
 
 *   **Phase 0-2 (Completed):** Build Scrapy-style local parsers, exact UPC reconciliation adapters, and TDD HTML fixture-parsing suites.
 *   **Phase 3-4 (Completed):** Implement dynamic category tree discovery, Freshop groupby crawling, Git-as-a-Database snapshots, scikit-learn Ridge modeling, and glass-box metrics dashboards.
-*   **Phase 5 (In Progress):** Add predictive model retraining pipelines on historical accumulations, cron automation under Docker, and alert dashboards.
+*   **Phase 5 (In Progress):** Add validated model retraining on historical accumulations and optional alerts for notable weekly movements.
 
 ---
 

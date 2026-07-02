@@ -525,6 +525,7 @@
       <li><a href="#eda">EDA</a></li>
       <li><a href="#model">Model</a></li>
       <li><a href="#pipeline">Pipeline</a></li>
+      <li><a href="weekly-report.html">Time Series</a></li>
       <li><a href="https://github.com/frankstop/KingKullenResearch">GitHub</a></li>
     </ul>
   </nav>
@@ -536,28 +537,29 @@
       <h1>King Kullen<br>Price Research</h1>
       <p class="hero-sub">A living catalog, crawled weekly.</p>
       <p class="hero-body">
-      <p>20,716 unique products. 423 sub-categories. Every item pulled directly from King Kullen's
+      <p>More than 16,000 unique products across hundreds of sub-categories. Every item pulled directly from King Kullen's
         Freshop API — not scraped from pages. Prices recorded weekly via GitHub Actions. The goal
-        is a multi-month time series: enough data to train a pricing model that actually generalizes.
+        is a multi-month time series that shows what changed, not just a pile of snapshots.
+        <a href="weekly-report.html">Explore the price time series and weekly comparisons.</a>
       </p>
     </div>
 
     <div class="hero-stats">
       <div class="stat-block">
-        <div class="stat-value">20,<span>716</span></div>
-        <div class="stat-label">Unique Products Tracked</div>
+        <div class="stat-value" id="latest-products">16,<span>974</span></div>
+        <div class="stat-label">Unique UPCs in Latest Snapshot</div>
       </div>
       <div class="stat-block">
-        <div class="stat-value"><span>423</span></div>
-        <div class="stat-label">Sub-Categories Mapped</div>
+        <div class="stat-value" id="latest-categories"><span>399</span></div>
+        <div class="stat-label">Categories in Latest Snapshot</div>
       </div>
       <div class="stat-block">
-        <div class="stat-value">~<span>15</span>%</div>
+        <div class="stat-value" id="latest-sale-rate"><span>15.9</span>%</div>
         <div class="stat-label">Items Currently on Sale</div>
       </div>
       <div class="stat-block">
-        <div class="stat-value">$<span>7.03</span></div>
-        <div class="stat-label">Average Regular Price</div>
+        <div class="stat-value" id="latest-average-price">$<span>6.60</span></div>
+        <div class="stat-label">Average Current Price</div>
       </div>
     </div>
   </div>
@@ -712,8 +714,8 @@
         <div class="step-connector"><div class="step-num">05</div></div>
         <div class="step-body">
           <span class="step-tag">Modeling</span>
-          <h3>Ridge regression, retrained on accumulation</h3>
-          <p>As weekly snapshots stack up, the model pipeline retrains on the combined history. Current R² sits at 0.445 on one snapshot. The target is above 0.60 once four or more months of price change data are available as features.</p>
+          <h3>Weekly change analysis</h3>
+          <p>After each crawl, the pipeline compares matched UPCs with the prior snapshot, counts increases, decreases, additions, removals, and sale items, then publishes the <a href="weekly-report.html">weekly report</a>. The model remains a separate experiment until automated retraining and evaluation are implemented.</p>
         </div>
       </div>
     </div>
@@ -722,8 +724,25 @@
   <!-- Footer -->
   <footer>
     <p>King Kullen Research &mdash; <a href="https://github.com/frankstop/KingKullenResearch">frankstop/KingKullenResearch</a></p>
-    <p>Updated weekly via GitHub Actions. Last crawl: 20,716 items across 423 categories.</p>
+    <p>Raw snapshots and the <a href="weekly-report.html">price-change report</a> update weekly via GitHub Actions. Latest data: <span id="latest-snapshot-date">2026-06-28</span>.</p>
   </footer>
 
+  <script>
+    fetch("data/weekly-summary.json")
+      .then(response => {
+        if (!response.ok) throw new Error("Weekly summary unavailable");
+        return response.json();
+      })
+      .then(({ latest }) => {
+        document.getElementById("latest-products").textContent = latest.products.toLocaleString();
+        document.getElementById("latest-categories").textContent = latest.categories.toLocaleString();
+        document.getElementById("latest-sale-rate").textContent = `${latest.sale_rate.toFixed(1)}%`;
+        document.getElementById("latest-average-price").textContent = `$${latest.average_price.toFixed(2)}`;
+        document.getElementById("latest-snapshot-date").textContent = latest.snapshot_date;
+      })
+      .catch(() => {
+        // Checked-in fallback values remain visible if the JSON cannot be loaded.
+      });
+  </script>
 </body>
 </html>

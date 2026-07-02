@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Automated King Kullen grocery price time series and weekly comparisons.">
+  <title>Price Time Series | King Kullen Research</title>
+  <style>
+    :root { --ink:#191719; --muted:#706a70; --paper:#faf7f8; --card:#fff;
+      --line:#e7dfe3; --accent:#c52875; --down:#087a55; --up:#b53b35; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink);
+      font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif; }
+    header,main,footer { width:min(1120px,calc(100% - 32px)); margin:auto; }
+    header { padding:54px 0 28px; }
+    a { color:var(--accent); }
+    .eyebrow { color:var(--accent); font-size:12px; font-weight:750;
+      letter-spacing:.1em; text-transform:uppercase; }
+    h1 { margin:7px 0 6px; font:500 clamp(34px,7vw,68px)/1.02 Georgia,serif; }
+    .lede { color:var(--muted); margin:0; font-size:17px; }
+    .metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:12px;
+      margin:22px 0 30px; }
+    .metric,.panel { background:var(--card); border:1px solid var(--line);
+      border-radius:12px; }
+    .metric { padding:18px; }
+    .metric span,small { display:block; color:var(--muted); font-size:12px; }
+    .metric strong { display:block; font-size:26px; margin-top:3px; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .charts { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .panel { overflow:hidden; margin-bottom:16px; }
+    h2 { font-size:17px; margin:0; padding:16px 18px;
+      border-bottom:1px solid var(--line); }
+    .scroll { overflow-x:auto; }
+    .chart { padding:10px; }
+    svg { display:block; width:100%; height:auto; }
+    svg line { stroke:var(--line); }
+    svg polyline { fill:none; stroke:var(--accent); stroke-width:3; }
+    svg circle { fill:var(--card); stroke:var(--accent); stroke-width:3; }
+    svg text { fill:var(--muted); font-size:11px; }
+    table { border-collapse:collapse; width:100%; }
+    th,td { border-bottom:1px solid var(--line); padding:12px 16px;
+      text-align:left; vertical-align:top; }
+    th { color:var(--muted); font-size:12px; }
+    tr:last-child td { border-bottom:0; }
+    .down { color:var(--down); font-weight:750; }
+    .up { color:var(--up); font-weight:750; }
+    footer { color:var(--muted); padding:20px 0 48px; }
+    @media(max-width:900px) { .charts { grid-template-columns:1fr; } }
+    @media(max-width:760px) { .metrics,.grid { grid-template-columns:1fr 1fr; } }
+    @media(max-width:520px) { .metrics,.grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Automated longitudinal analysis</div>
+  <h1>Price time series</h1>
+  <p class="lede">2026-06-21 compared with 2026-06-28.
+    Generated from the checked-in price snapshots, not hand-entered numbers.</p>
+</header>
+<main>
+  <div class="metrics">
+    <div class="metric"><span>Products tracked</span><strong>16,974</strong></div>
+    <div class="metric"><span>Prices changed</span><strong>2,766</strong></div>
+    <div class="metric"><span>Price decreases</span><strong>1,504</strong></div>
+    <div class="metric"><span>Pipeline health</span><strong>Healthy</strong></div>
+  </div>
+  <section>
+    <div class="eyebrow">Time series</div>
+    <h2 style="border:0;padding:4px 0 14px">How the catalog changes over time</h2>
+    <div class="charts">
+      <div class="panel"><h2>Unique products</h2><div class="chart"><svg viewBox="0 0 720 220" role="img" aria-label="Unique products over time">
+      <line x1="54" y1="178" x2="702" y2="178" />
+      <polyline points="54.0,160.2 146.6,160.2 239.1,142.1 331.7,156.7 424.3,150.5 516.9,41.8 609.4,80.2 702.0,82.5" />
+      <circle cx="54.0" cy="160.2" r="4"><title>2026-05-16: 16,473.0</title></circle><text class="value-label" x="54.0" y="150.2" text-anchor="middle">16.5k</text><circle cx="146.6" cy="160.2" r="4"><title>2026-05-17: 16,473.0</title></circle><text class="value-label" x="146.6" y="150.2" text-anchor="middle">16.5k</text><circle cx="239.1" cy="142.1" r="4"><title>2026-05-24: 16,590.0</title></circle><text class="value-label" x="239.1" y="132.1" text-anchor="middle">16.6k</text><circle cx="331.7" cy="156.7" r="4"><title>2026-05-31: 16,496.0</title></circle><text class="value-label" x="331.7" y="146.7" text-anchor="middle">16.5k</text><circle cx="424.3" cy="150.5" r="4"><title>2026-06-07: 16,536.0</title></circle><text class="value-label" x="424.3" y="140.5" text-anchor="middle">16.5k</text><circle cx="516.9" cy="41.8" r="4"><title>2026-06-14: 17,237.0</title></circle><text class="value-label" x="516.9" y="31.8" text-anchor="middle">17.2k</text><circle cx="609.4" cy="80.2" r="4"><title>2026-06-21: 16,989.0</title></circle><text class="value-label" x="609.4" y="70.2" text-anchor="middle">17.0k</text><circle cx="702.0" cy="82.5" r="4"><title>2026-06-28: 16,974.0</title></circle><text class="value-label" x="702.0" y="72.5" text-anchor="middle">17.0k</text><text x="54.0" y="206" text-anchor="middle">05-16</text><text x="146.6" y="206" text-anchor="middle">05-17</text><text x="239.1" y="206" text-anchor="middle">05-24</text><text x="331.7" y="206" text-anchor="middle">05-31</text><text x="424.3" y="206" text-anchor="middle">06-07</text><text x="516.9" y="206" text-anchor="middle">06-14</text><text x="609.4" y="206" text-anchor="middle">06-21</text><text x="702.0" y="206" text-anchor="middle">06-28</text>
+    </svg></div></div>
+      <div class="panel"><h2>Products on sale</h2><div class="chart"><svg viewBox="0 0 720 220" role="img" aria-label="Products on sale over time">
+      <line x1="54" y1="178" x2="702" y2="178" />
+      <polyline points="54.0,81.8 146.6,81.8 239.1,43.2 331.7,158.8 424.3,143.3 516.9,143.3 609.4,143.3 702.0,93.3" />
+      <circle cx="54.0" cy="81.8" r="4"><title>2026-05-16: 16.2%</title></circle><text class="value-label" x="54.0" y="71.8" text-anchor="middle">16.2%</text><circle cx="146.6" cy="81.8" r="4"><title>2026-05-17: 16.2%</title></circle><text class="value-label" x="146.6" y="71.8" text-anchor="middle">16.2%</text><circle cx="239.1" cy="43.2" r="4"><title>2026-05-24: 17.2%</title></circle><text class="value-label" x="239.1" y="33.2" text-anchor="middle">17.2%</text><circle cx="331.7" cy="158.8" r="4"><title>2026-05-31: 14.2%</title></circle><text class="value-label" x="331.7" y="148.8" text-anchor="middle">14.2%</text><circle cx="424.3" cy="143.3" r="4"><title>2026-06-07: 14.6%</title></circle><text class="value-label" x="424.3" y="133.3" text-anchor="middle">14.6%</text><circle cx="516.9" cy="143.3" r="4"><title>2026-06-14: 14.6%</title></circle><text class="value-label" x="516.9" y="133.3" text-anchor="middle">14.6%</text><circle cx="609.4" cy="143.3" r="4"><title>2026-06-21: 14.6%</title></circle><text class="value-label" x="609.4" y="133.3" text-anchor="middle">14.6%</text><circle cx="702.0" cy="93.3" r="4"><title>2026-06-28: 15.9%</title></circle><text class="value-label" x="702.0" y="83.3" text-anchor="middle">15.9%</text><text x="54.0" y="206" text-anchor="middle">05-16</text><text x="146.6" y="206" text-anchor="middle">05-17</text><text x="239.1" y="206" text-anchor="middle">05-24</text><text x="331.7" y="206" text-anchor="middle">05-31</text><text x="424.3" y="206" text-anchor="middle">06-07</text><text x="516.9" y="206" text-anchor="middle">06-14</text><text x="609.4" y="206" text-anchor="middle">06-21</text><text x="702.0" y="206" text-anchor="middle">06-28</text>
+    </svg></div></div>
+      <div class="panel"><h2>Average price</h2><div class="chart"><svg viewBox="0 0 720 220" role="img" aria-label="Average catalog price over time">
+      <line x1="54" y1="178" x2="702" y2="178" />
+      <polyline points="54.0,105.9 146.6,105.9 239.1,108.6 331.7,100.3 424.3,100.3 516.9,93.4 609.4,97.5 702.0,94.8" />
+      <circle cx="54.0" cy="105.9" r="4"><title>2026-05-16: 6.5</title></circle><text class="value-label" x="54.0" y="95.9" text-anchor="middle">$6.52</text><circle cx="146.6" cy="105.9" r="4"><title>2026-05-17: 6.5</title></circle><text class="value-label" x="146.6" y="95.9" text-anchor="middle">$6.52</text><circle cx="239.1" cy="108.6" r="4"><title>2026-05-24: 6.5</title></circle><text class="value-label" x="239.1" y="98.6" text-anchor="middle">$6.50</text><circle cx="331.7" cy="100.3" r="4"><title>2026-05-31: 6.6</title></circle><text class="value-label" x="331.7" y="90.3" text-anchor="middle">$6.56</text><circle cx="424.3" cy="100.3" r="4"><title>2026-06-07: 6.6</title></circle><text class="value-label" x="424.3" y="90.3" text-anchor="middle">$6.56</text><circle cx="516.9" cy="93.4" r="4"><title>2026-06-14: 6.6</title></circle><text class="value-label" x="516.9" y="83.4" text-anchor="middle">$6.61</text><circle cx="609.4" cy="97.5" r="4"><title>2026-06-21: 6.6</title></circle><text class="value-label" x="609.4" y="87.5" text-anchor="middle">$6.58</text><circle cx="702.0" cy="94.8" r="4"><title>2026-06-28: 6.6</title></circle><text class="value-label" x="702.0" y="84.8" text-anchor="middle">$6.60</text><text x="54.0" y="206" text-anchor="middle">05-16</text><text x="146.6" y="206" text-anchor="middle">05-17</text><text x="239.1" y="206" text-anchor="middle">05-24</text><text x="331.7" y="206" text-anchor="middle">05-31</text><text x="424.3" y="206" text-anchor="middle">06-07</text><text x="516.9" y="206" text-anchor="middle">06-14</text><text x="609.4" y="206" text-anchor="middle">06-21</text><text x="702.0" y="206" text-anchor="middle">06-28</text>
+    </svg></div></div>
+    </div>
+  </section>
+  <section class="panel"><h2>Every week-over-week comparison</h2><div class="scroll">
+    <table><thead><tr><th>Period</th><th>Matched</th><th>Coverage</th>
+      <th>Decreases</th><th>Increases</th><th>Added</th><th>Removed</th></tr></thead>
+      <tbody><tr><td>2026-06-21 → 2026-06-28</td><td>16,417</td><td>96.6%</td><td class="down">1,504</td><td class="up">1,262</td><td>557</td><td>572</td></tr><tr><td>2026-06-14 → 2026-06-21</td><td>16,433</td><td>95.3%</td><td class="down">787</td><td class="up">872</td><td>556</td><td>804</td></tr><tr><td>2026-06-07 → 2026-06-14</td><td>16,526</td><td>99.9%</td><td class="down">969</td><td class="up">903</td><td>711</td><td>10</td></tr><tr><td>2026-05-31 → 2026-06-07</td><td>15,841</td><td>96.0%</td><td class="down">824</td><td class="up">802</td><td>695</td><td>655</td></tr><tr><td>2026-05-24 → 2026-05-31</td><td>15,883</td><td>95.7%</td><td class="down">1,065</td><td class="up">1,667</td><td>613</td><td>707</td></tr><tr><td>2026-05-17 → 2026-05-24</td><td>15,850</td><td>96.2%</td><td class="down">1,061</td><td class="up">893</td><td>740</td><td>623</td></tr><tr><td>2026-05-16 → 2026-05-17</td><td>16,473</td><td>100.0%</td><td class="down">0</td><td class="up">0</td><td>0</td><td>0</td></tr></tbody></table>
+  </div></section>
+  <div class="eyebrow" style="margin:28px 0 10px">Latest weekly detail</div>
+  <div class="grid">
+    <section class="panel"><h2>Largest price decreases</h2><div class="scroll">
+      <table><thead><tr><th>Product</th><th>Was</th><th>Now</th><th>Change</th></tr></thead>
+      <tbody><tr><td>Kraft Singles American Cheese Slices, 16 count, 12 oz<small>UPC 00021000604647</small></td><td>$6.49</td><td>$2.50</td><td class="down">-61.5%</td></tr><tr><td>Kraft Singles 2% Milk American Cheese Slices, 16 count, 10.7 oz<small>UPC 00021000024834</small></td><td>$6.49</td><td>$2.50</td><td class="down">-61.5%</td></tr><tr><td>Kraft Singles White American Cheese Slices, 16 count, 12 oz<small>UPC 00021000604654</small></td><td>$6.49</td><td>$2.50</td><td class="down">-61.5%</td></tr><tr><td>B&amp;G Deluxe Kosher Dill Spears with Whole Spices, 24 fl oz<small>UPC 00031500001273</small></td><td>$4.99</td><td>$1.99</td><td class="down">-60.1%</td></tr><tr><td>B&amp;G Bread &amp; Butter Chips with Whole Spices Pickles, 24 fl oz<small>UPC 00031500002645</small></td><td>$4.99</td><td>$1.99</td><td class="down">-60.1%</td></tr><tr><td>B&amp;G Crunchy Kosher Dill Gherkins, 24 fl oz<small>UPC 00031500001280</small></td><td>$4.99</td><td>$1.99</td><td class="down">-60.1%</td></tr><tr><td>POPDAD PRTZL GRLC PARM<small>UPC 00855206005188</small></td><td>$4.49</td><td>$1.99</td><td class="down">-55.7%</td></tr><tr><td>Pompeian Robust Extra Virgin Olive Oil, 16 fl oz<small>UPC 00070404000081</small></td><td>$14.99</td><td>$6.99</td><td class="down">-53.4%</td></tr><tr><td>NY STLHD SAL FILET<small>UPC 00220032000001</small></td><td>$16.99</td><td>$7.99</td><td class="down">-53.0%</td></tr><tr><td>Progresso Cannellini White Kidney Beans, 19 oz<small>UPC 00041196020328</small></td><td>$1.99</td><td>$0.99</td><td class="down">-50.3%</td></tr></tbody></table>
+    </div></section>
+    <section class="panel"><h2>Largest price increases</h2><div class="scroll">
+      <table><thead><tr><th>Product</th><th>Was</th><th>Now</th><th>Change</th></tr></thead>
+      <tbody><tr><td>CORN BI-COLOR<small>UPC 00000000045919</small></td><td>$0.33</td><td>$0.75</td><td class="up">+127.3%</td></tr><tr><td>Bi-Color Corn<small>UPC 00000000045902</small></td><td>$0.33</td><td>$0.75</td><td class="up">+127.3%</td></tr><tr><td>Bi-Color Corn Yellow<small>UPC 00000000040785</small></td><td>$0.33</td><td>$0.75</td><td class="up">+127.3%</td></tr><tr><td>Bounty Paper Towels Full Sheet White, 6 Double Rolls, 50 Sheets Per Roll<small>UPC 00030772160213</small></td><td>$10.00</td><td>$20.99</td><td class="up">+109.9%</td></tr><tr><td>Bounty Paper Towels Select-A-Size White, 6 Double Rolls, 82 Sheets Per Roll<small>UPC 00030772157039</small></td><td>$10.00</td><td>$20.99</td><td class="up">+109.9%</td></tr><tr><td>Just Crack an Egg Ultimate Scramble Kit, 3 oz<small>UPC 00021000067527</small></td><td>$1.74</td><td>$3.49</td><td class="up">+100.6%</td></tr><tr><td>Just Crack an Egg Denver Scramble Kit, 3 oz<small>UPC 00021000067473</small></td><td>$1.74</td><td>$3.49</td><td class="up">+100.6%</td></tr><tr><td>Just Crack an Egg Veggie Scramble Kit, 3 oz<small>UPC 00021000073276</small></td><td>$1.74</td><td>$3.49</td><td class="up">+100.6%</td></tr><tr><td>Just Crack an Egg Protein Packed Scramble Kit, 2.25 oz<small>UPC 00021000073306</small></td><td>$1.74</td><td>$3.49</td><td class="up">+100.6%</td></tr><tr><td>Just Crack an Egg All American Scramble Kit, 3 oz<small>UPC 00021000067510</small></td><td>$1.74</td><td>$3.49</td><td class="up">+100.6%</td></tr></tbody></table>
+    </div></section>
+  </div>
+  <section class="panel"><h2>Snapshot history</h2><div class="scroll">
+    <table><thead><tr><th>Date</th><th>Products</th><th>Categories</th>
+      <th>Average price</th><th>On sale</th></tr></thead><tbody><tr><td>2026-06-28</td><td>16,974</td><td>399</td><td>$6.60</td><td>15.9%</td></tr><tr><td>2026-06-21</td><td>16,989</td><td>402</td><td>$6.58</td><td>14.6%</td></tr><tr><td>2026-06-14</td><td>17,237</td><td>397</td><td>$6.61</td><td>14.6%</td></tr><tr><td>2026-06-07</td><td>16,536</td><td>396</td><td>$6.56</td><td>14.6%</td></tr><tr><td>2026-05-31</td><td>16,496</td><td>396</td><td>$6.56</td><td>14.2%</td></tr><tr><td>2026-05-24</td><td>16,590</td><td>392</td><td>$6.50</td><td>17.2%</td></tr><tr><td>2026-05-17</td><td>16,473</td><td>391</td><td>$6.52</td><td>16.2%</td></tr><tr><td>2026-05-16</td><td>16,473</td><td>391</td><td>$6.52</td><td>16.2%</td></tr></tbody></table>
+  </div></section>
+</main>
+<footer><a href="./">Project overview</a> · <a href="https://github.com/frankstop/KingKullenResearch">Source and raw snapshots</a></footer>
+</body>
+</html>

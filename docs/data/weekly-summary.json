@@ -1,0 +1,358 @@
+{
+  "generated_from": [
+    "2026-06-21.jsonl",
+    "2026-06-28.jsonl"
+  ],
+  "latest": {
+    "snapshot_date": "2026-06-28",
+    "products": 16974,
+    "categories": 399,
+    "average_price": 6.6,
+    "sale_items": 2696,
+    "sale_rate": 15.9
+  },
+  "previous": {
+    "snapshot_date": "2026-06-21",
+    "products": 16989,
+    "categories": 402,
+    "average_price": 6.58,
+    "sale_items": 2486,
+    "sale_rate": 14.6
+  },
+  "comparison": {
+    "from_date": "2026-06-21",
+    "to_date": "2026-06-28",
+    "matched_products": 16417,
+    "coverage_percentage": 96.6,
+    "price_changes": 2766,
+    "price_increases": 1262,
+    "price_decreases": 1504,
+    "unchanged_prices": 13651,
+    "new_products": 557,
+    "removed_products": 572,
+    "median_price_change_percentage": -7.9
+  },
+  "largest_decreases": [
+    {
+      "upc": "00021000604647",
+      "name": "Kraft Singles American Cheese Slices, 16 count, 12 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00021000024834",
+      "name": "Kraft Singles 2% Milk American Cheese Slices, 16 count, 10.7 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00021000604654",
+      "name": "Kraft Singles White American Cheese Slices, 16 count, 12 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00031500001273",
+      "name": "B&G Deluxe Kosher Dill Spears with Whole Spices, 24 fl oz",
+      "previous_price": 4.99,
+      "current_price": 1.99,
+      "change": -3.0,
+      "change_percentage": -60.1
+    },
+    {
+      "upc": "00031500002645",
+      "name": "B&G Bread & Butter Chips with Whole Spices Pickles, 24 fl oz",
+      "previous_price": 4.99,
+      "current_price": 1.99,
+      "change": -3.0,
+      "change_percentage": -60.1
+    },
+    {
+      "upc": "00031500001280",
+      "name": "B&G Crunchy Kosher Dill Gherkins, 24 fl oz",
+      "previous_price": 4.99,
+      "current_price": 1.99,
+      "change": -3.0,
+      "change_percentage": -60.1
+    },
+    {
+      "upc": "00855206005188",
+      "name": "POPDAD PRTZL GRLC PARM",
+      "previous_price": 4.49,
+      "current_price": 1.99,
+      "change": -2.5,
+      "change_percentage": -55.7
+    },
+    {
+      "upc": "00070404000081",
+      "name": "Pompeian Robust Extra Virgin Olive Oil, 16 fl oz",
+      "previous_price": 14.99,
+      "current_price": 6.99,
+      "change": -8.0,
+      "change_percentage": -53.4
+    },
+    {
+      "upc": "00220032000001",
+      "name": "NY STLHD SAL FILET",
+      "previous_price": 16.99,
+      "current_price": 7.99,
+      "change": -9.0,
+      "change_percentage": -53.0
+    },
+    {
+      "upc": "00041196020328",
+      "name": "Progresso Cannellini White Kidney Beans, 19 oz",
+      "previous_price": 1.99,
+      "current_price": 0.99,
+      "change": -1.0,
+      "change_percentage": -50.3
+    }
+  ],
+  "largest_increases": [
+    {
+      "upc": "00000000045919",
+      "name": "CORN BI-COLOR",
+      "previous_price": 0.33,
+      "current_price": 0.75,
+      "change": 0.42,
+      "change_percentage": 127.3
+    },
+    {
+      "upc": "00000000045902",
+      "name": "Bi-Color Corn",
+      "previous_price": 0.33,
+      "current_price": 0.75,
+      "change": 0.42,
+      "change_percentage": 127.3
+    },
+    {
+      "upc": "00000000040785",
+      "name": "Bi-Color Corn Yellow",
+      "previous_price": 0.33,
+      "current_price": 0.75,
+      "change": 0.42,
+      "change_percentage": 127.3
+    },
+    {
+      "upc": "00030772160213",
+      "name": "Bounty Paper Towels Full Sheet White, 6 Double Rolls, 50 Sheets Per Roll",
+      "previous_price": 10.0,
+      "current_price": 20.99,
+      "change": 10.99,
+      "change_percentage": 109.9
+    },
+    {
+      "upc": "00030772157039",
+      "name": "Bounty Paper Towels Select-A-Size White, 6 Double Rolls, 82 Sheets Per Roll",
+      "previous_price": 10.0,
+      "current_price": 20.99,
+      "change": 10.99,
+      "change_percentage": 109.9
+    },
+    {
+      "upc": "00021000067527",
+      "name": "Just Crack an Egg Ultimate Scramble Kit, 3 oz",
+      "previous_price": 1.74,
+      "current_price": 3.49,
+      "change": 1.75,
+      "change_percentage": 100.6
+    },
+    {
+      "upc": "00021000067473",
+      "name": "Just Crack an Egg Denver Scramble Kit, 3 oz",
+      "previous_price": 1.74,
+      "current_price": 3.49,
+      "change": 1.75,
+      "change_percentage": 100.6
+    },
+    {
+      "upc": "00021000073276",
+      "name": "Just Crack an Egg Veggie Scramble Kit, 3 oz",
+      "previous_price": 1.74,
+      "current_price": 3.49,
+      "change": 1.75,
+      "change_percentage": 100.6
+    },
+    {
+      "upc": "00021000073306",
+      "name": "Just Crack an Egg Protein Packed Scramble Kit, 2.25 oz",
+      "previous_price": 1.74,
+      "current_price": 3.49,
+      "change": 1.75,
+      "change_percentage": 100.6
+    },
+    {
+      "upc": "00021000067510",
+      "name": "Just Crack an Egg All American Scramble Kit, 3 oz",
+      "previous_price": 1.74,
+      "current_price": 3.49,
+      "change": 1.75,
+      "change_percentage": 100.6
+    }
+  ],
+  "history": [
+    {
+      "snapshot_date": "2026-05-16",
+      "products": 16473,
+      "categories": 391,
+      "average_price": 6.52,
+      "sale_items": 2667,
+      "sale_rate": 16.2
+    },
+    {
+      "snapshot_date": "2026-05-17",
+      "products": 16473,
+      "categories": 391,
+      "average_price": 6.52,
+      "sale_items": 2667,
+      "sale_rate": 16.2
+    },
+    {
+      "snapshot_date": "2026-05-24",
+      "products": 16590,
+      "categories": 392,
+      "average_price": 6.5,
+      "sale_items": 2850,
+      "sale_rate": 17.2
+    },
+    {
+      "snapshot_date": "2026-05-31",
+      "products": 16496,
+      "categories": 396,
+      "average_price": 6.56,
+      "sale_items": 2345,
+      "sale_rate": 14.2
+    },
+    {
+      "snapshot_date": "2026-06-07",
+      "products": 16536,
+      "categories": 396,
+      "average_price": 6.56,
+      "sale_items": 2413,
+      "sale_rate": 14.6
+    },
+    {
+      "snapshot_date": "2026-06-14",
+      "products": 17237,
+      "categories": 397,
+      "average_price": 6.61,
+      "sale_items": 2514,
+      "sale_rate": 14.6
+    },
+    {
+      "snapshot_date": "2026-06-21",
+      "products": 16989,
+      "categories": 402,
+      "average_price": 6.58,
+      "sale_items": 2486,
+      "sale_rate": 14.6
+    },
+    {
+      "snapshot_date": "2026-06-28",
+      "products": 16974,
+      "categories": 399,
+      "average_price": 6.6,
+      "sale_items": 2696,
+      "sale_rate": 15.9
+    }
+  ],
+  "comparisons": [
+    {
+      "from_date": "2026-05-16",
+      "to_date": "2026-05-17",
+      "matched_products": 16473,
+      "coverage_percentage": 100.0,
+      "price_changes": 0,
+      "price_increases": 0,
+      "price_decreases": 0,
+      "unchanged_prices": 16473,
+      "new_products": 0,
+      "removed_products": 0,
+      "median_price_change_percentage": 0.0
+    },
+    {
+      "from_date": "2026-05-17",
+      "to_date": "2026-05-24",
+      "matched_products": 15850,
+      "coverage_percentage": 96.2,
+      "price_changes": 1954,
+      "price_increases": 893,
+      "price_decreases": 1061,
+      "unchanged_prices": 13896,
+      "new_products": 740,
+      "removed_products": 623,
+      "median_price_change_percentage": -11.8
+    },
+    {
+      "from_date": "2026-05-24",
+      "to_date": "2026-05-31",
+      "matched_products": 15883,
+      "coverage_percentage": 95.7,
+      "price_changes": 2732,
+      "price_increases": 1667,
+      "price_decreases": 1065,
+      "unchanged_prices": 13151,
+      "new_products": 613,
+      "removed_products": 707,
+      "median_price_change_percentage": 16.0
+    },
+    {
+      "from_date": "2026-05-31",
+      "to_date": "2026-06-07",
+      "matched_products": 15841,
+      "coverage_percentage": 96.0,
+      "price_changes": 1626,
+      "price_increases": 802,
+      "price_decreases": 824,
+      "unchanged_prices": 14215,
+      "new_products": 695,
+      "removed_products": 655,
+      "median_price_change_percentage": -4.8
+    },
+    {
+      "from_date": "2026-06-07",
+      "to_date": "2026-06-14",
+      "matched_products": 16526,
+      "coverage_percentage": 99.9,
+      "price_changes": 1872,
+      "price_increases": 903,
+      "price_decreases": 969,
+      "unchanged_prices": 14654,
+      "new_products": 711,
+      "removed_products": 10,
+      "median_price_change_percentage": -6.3
+    },
+    {
+      "from_date": "2026-06-14",
+      "to_date": "2026-06-21",
+      "matched_products": 16433,
+      "coverage_percentage": 95.3,
+      "price_changes": 1659,
+      "price_increases": 872,
+      "price_decreases": 787,
+      "unchanged_prices": 14774,
+      "new_products": 556,
+      "removed_products": 804,
+      "median_price_change_percentage": 7.2
+    },
+    {
+      "from_date": "2026-06-21",
+      "to_date": "2026-06-28",
+      "matched_products": 16417,
+      "coverage_percentage": 96.6,
+      "price_changes": 2766,
+      "price_increases": 1262,
+      "price_decreases": 1504,
+      "unchanged_prices": 13651,
+      "new_products": 557,
+      "removed_products": 572,
+      "median_price_change_percentage": -7.9
+    }
+  ]
+}

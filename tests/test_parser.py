@@ -34,6 +34,8 @@ class ParseProductPageTest(unittest.TestCase):
                 "current_price": "3.49",
                 "regular_price": "3.99",
                 "store": "North Market",
+                "department": "UNAVAILABLE",
+                "categories": [],
                 "timestamp": "2026-05-14T19:30:00Z",
             },
         )

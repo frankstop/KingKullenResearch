@@ -79,7 +79,12 @@ def extract_items(api_data: dict, store: str, timestamp: str) -> list[ScrapedIte
 
 from typing import Optional
 
-def run_crawler(output_path: Path, store_id: int = 23, cat_file: Optional[Path] = None):
+def run_crawler(
+    output_path: Path,
+    store_id: int = 23,
+    cat_file: Optional[Path] = None,
+    minimum_items: int = 1,
+):
     if cat_file is None:
         # Discover categories dynamically from the homepage
         from grocery_pricing.discovery import run_discovery
@@ -88,8 +93,7 @@ def run_crawler(output_path: Path, store_id: int = 23, cat_file: Optional[Path] 
         cat_file = Path("artifacts/kingkullen/categories.json")
 
     if not cat_file.exists():
-        logger.error(f"Categories file {cat_file} not found")
-        return
+        raise FileNotFoundError(f"Categories file {cat_file} not found")
 
     with open(cat_file, "r") as f:
         category_urls = json.load(f)
@@ -98,43 +102,57 @@ def run_crawler(output_path: Path, store_id: int = 23, cat_file: Optional[Path] 
     logger.info(f"Loaded {len(category_ids)} category IDs.")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    out_handle = open(output_path, "w")  # Always write fresh snapshot for cron runs
+    temporary_path = output_path.with_suffix(output_path.suffix + ".tmp")
     total_count = 0
 
     store = "King Kullen"
     timestamp = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     take = 10  # API limit is 10 subcategories per page
 
-    for idx, cat_id in enumerate(category_ids):
-        logger.info(f"[{idx+1}/{len(category_ids)}] Crawling category {cat_id}")
+    try:
+        with temporary_path.open("w", encoding="utf-8") as out_handle:
+            for idx, cat_id in enumerate(category_ids):
+                logger.info(f"[{idx+1}/{len(category_ids)}] Crawling category {cat_id}")
 
-        skip = 0
-        while True:
-            api_data = fetch_api(cat_id, store_id=store_id, skip=skip, take=take)
+                skip = 0
+                while True:
+                    api_data = fetch_api(
+                        cat_id, store_id=store_id, skip=skip, take=take
+                    )
 
-            if not api_data:
-                break
+                    if not api_data:
+                        break
 
-            items = extract_items(api_data, store, timestamp)
-            if not items:
-                break
+                    items = extract_items(api_data, store, timestamp)
+                    if not items:
+                        break
 
-            for item in items:
-                out_handle.write(json.dumps(item.to_json()) + "\n")
-                total_count += 1
+                    for item in items:
+                        out_handle.write(json.dumps(item.to_json()) + "\n")
+                        total_count += 1
 
-            logger.info(f"  - Page skip={skip}: +{len(items)} items")
+                    logger.info(f"  - Page skip={skip}: +{len(items)} items")
 
-            if api_data.get("count", 0) < take:
-                break
+                    if api_data.get("count", 0) < take:
+                        break
 
-            skip += take
-            time.sleep(1.0)  # Polite delay between pages
+                    skip += take
+                    time.sleep(1.0)  # Polite delay between pages
 
-        time.sleep(1.0)  # Polite delay between categories
+                time.sleep(1.0)  # Polite delay between categories
 
-    out_handle.close()
+        if total_count < minimum_items:
+            raise RuntimeError(
+                f"Crawl produced {total_count} items; expected at least "
+                f"{minimum_items}. Existing snapshot was left untouched."
+            )
+        temporary_path.replace(output_path)
+    except BaseException:
+        temporary_path.unlink(missing_ok=True)
+        raise
+
     logger.info(f"Crawl complete. {total_count} items written to {output_path}")
+    return total_count
 
 
 if __name__ == "__main__":
@@ -157,5 +175,16 @@ if __name__ == "__main__":
         default=None,
         help="Path to categories.json. If omitted, discovery runs first.",
     )
+    parser.add_argument(
+        "--minimum-items",
+        type=int,
+        default=1,
+        help="Fail without replacing the snapshot if fewer items are collected.",
+    )
     args = parser.parse_args()
-    run_crawler(output_path=args.output, store_id=args.store_id, cat_file=args.categories)
+    run_crawler(
+        output_path=args.output,
+        store_id=args.store_id,
+        cat_file=args.categories,
+        minimum_items=args.minimum_items,
+    )

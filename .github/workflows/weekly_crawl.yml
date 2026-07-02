@@ -30,18 +30,25 @@ jobs:
 
       - name: Run King Kullen API Crawler
         run: |
-          # The crawler will use its default output: data/snapshots/YYYY-MM-DD.jsonl
-          python -m grocery_pricing.api_crawler
+          python -m grocery_pricing.api_crawler --minimum-items 10000
 
-      - name: Commit and push results
+      - name: Compare with prior week and publish report
+        run: |
+          python -m grocery_pricing.weekly_report --markdown weekly-summary.md
+          cat weekly-summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Run verification
+        run: python -m unittest
+
+      - name: Commit snapshot and analysis
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add data/snapshots/*.jsonl
+          git add data/snapshots/*.jsonl docs/weekly-report.html docs/data/weekly-summary.json
           # Only commit if there are changes
           if git diff --staged --quiet; then
-            echo "No new price data found."
+            echo "No new price data or analysis found."
           else
-            git commit -m "chore: weekly price snapshot $(date +%F)"
+            git commit -m "data: weekly snapshot and price analysis $(date +%F)"
             git push
           fi
