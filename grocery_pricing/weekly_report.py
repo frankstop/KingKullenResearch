@@ -8,6 +8,8 @@ from pathlib import Path
 from statistics import mean, median
 from typing import Any
 
+from .catalog_history import build_catalog_history
+
 
 @dataclass(frozen=True)
 class SnapshotStats:
@@ -156,12 +158,12 @@ def build_weekly_summary(snapshot_paths: list[Path]) -> dict[str, Any]:
         "previous": asdict(previous_stats),
         "comparison": latest_comparison,
         "largest_decreases": sorted(
-            latest_decreases, key=lambda item: item["change_percentage"]
+            latest_decreases,
+            key=lambda item: (item["change_percentage"], item["upc"]),
         )[:10],
         "largest_increases": sorted(
             latest_increases,
-            key=lambda item: item["change_percentage"],
-            reverse=True,
+            key=lambda item: (-item["change_percentage"], item["upc"]),
         )[:10],
         "history": history,
         "comparisons": comparisons,
@@ -321,12 +323,14 @@ def render_html(summary: dict[str, Any]) -> str:
     .down {{ color:var(--down); font-weight:750; }}
     .up {{ color:var(--up); font-weight:750; }}
     footer {{ color:var(--muted); padding:20px 0 48px; }}
+    .nav {{ display:flex; gap:16px; flex-wrap:wrap; width:min(1120px,calc(100% - 32px)); margin:auto; padding:14px 0; border-bottom:1px solid var(--line); }}
     @media(max-width:900px) {{ .charts {{ grid-template-columns:1fr; }} }}
     @media(max-width:760px) {{ .metrics,.grid {{ grid-template-columns:1fr 1fr; }} }}
     @media(max-width:520px) {{ .metrics,.grid {{ grid-template-columns:1fr; }} }}
   </style>
 </head>
 <body>
+<nav class="nav" aria-label="Primary"><a href="index.html">Overview</a><a href="weekly-report.html" aria-current="page">Time series</a><a href="https://frankiejvaldez.com/projects/kingkullenresearch/catalog-history/" target="_top">All items</a><a href="data/weekly-summary.json">Data contract</a><a href="https://github.com/frankstop/KingKullenResearch">Source</a></nav>
 <header>
   <div class="eyebrow">Automated longitudinal analysis</div>
   <h1>Price time series</h1>
@@ -370,7 +374,7 @@ def render_html(summary: dict[str, Any]) -> str:
       <th>Average price</th><th>On sale</th></tr></thead><tbody>{history_rows}</tbody></table>
   </div></section>
 </main>
-<footer><a href="./">Project overview</a> · <a href="https://github.com/frankstop/KingKullenResearch">Source and raw snapshots</a></footer>
+<footer><a href="./">Project overview</a> · <a href="catalog-history.html">All item histories</a> · <a href="https://github.com/frankstop/KingKullenResearch">Source and raw snapshots</a></footer>
 </body>
 </html>
 """
@@ -419,6 +423,7 @@ def write_report(
     if markdown_output:
         markdown_output.parent.mkdir(parents=True, exist_ok=True)
         markdown_output.write_text(render_markdown(summary), encoding="utf-8")
+    build_catalog_history(snapshots_dir, json_output.parent / "catalog-history")
     return summary
 
 

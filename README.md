@@ -7,7 +7,7 @@
 
 An automated longitudinal grocery pricing pipeline. It collects over **20,000 catalog records** representing more than **16,000 unique UPCs** weekly through King Kullen's Freshop storefront gateway API, compares every new snapshot with the prior week, and publishes concrete price movements.
 
-The project overview and [price time series](https://frankstop.github.io/KingKullenResearch/weekly-report.html) are published through GitHub Pages. The time-series page shows catalog health and every week-over-week comparison, then drills into the latest price movers.
+The project overview, [price time series](https://frankstop.github.io/KingKullenResearch/weekly-report.html), and searchable [all-item price history](https://frankiejvaldez.com/projects/kingkullenresearch/catalog-history/) are published through GitHub Pages. The item explorer retains current, missing, and returned UPCs across every snapshot rather than limiting the view to top movers.
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the raw → derived → published contracts and failure rules.
 
@@ -58,6 +58,11 @@ The weekly automation does not currently retrain this model. It is kept separate
 - It also derives a complete time series across all snapshots, including product count, average price, sale rate, matched coverage, and change counts for every adjacent week.
 - Each scheduled run publishes `docs/weekly-report.html` for people and `docs/data/weekly-summary.json` as the stable machine-readable contract for downstream use.
 - Publication fails if the newest crawl matches less than 80% of the prior catalog, preventing a partial crawl from silently becoming the new baseline.
+
+### 5. All-Item Catalog History
+- **`grocery_pricing/catalog_history.py`** builds the union of every UPC across every dated snapshot.
+- The explorer supports name/category/UPC search, status filters, price-range summaries, sparklines, deep-linked item histories, and filtered CSV export.
+- Missing weeks are explicit chart gaps; prices are never interpolated or converted to zero.
 
 ---
 

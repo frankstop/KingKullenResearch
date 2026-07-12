@@ -44,7 +44,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add data/snapshots/*.jsonl docs/weekly-report.html docs/data/weekly-summary.json
+          git add data/snapshots/*.jsonl docs/index.html docs/weekly-report.html docs/catalog-history.html docs/assets/catalog-history.css docs/assets/catalog-history.js docs/data/weekly-summary.json docs/data/catalog-history
           # Only commit if there are changes
           if git diff --staged --quiet; then
             echo "No new price data or analysis found."
