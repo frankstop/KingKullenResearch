@@ -1,9 +1,17 @@
 {
   "generated_from": [
-    "2026-06-28.jsonl",
-    "2026-07-05.jsonl"
+    "2026-07-05.jsonl",
+    "2026-07-12.jsonl"
   ],
   "latest": {
+    "snapshot_date": "2026-07-12",
+    "products": 16980,
+    "categories": 404,
+    "average_price": 6.67,
+    "sale_items": 2265,
+    "sale_rate": 13.3
+  },
+  "previous": {
     "snapshot_date": "2026-07-05",
     "products": 16951,
     "categories": 398,
@@ -11,189 +19,181 @@
     "sale_items": 2509,
     "sale_rate": 14.8
   },
-  "previous": {
-    "snapshot_date": "2026-06-28",
-    "products": 16974,
-    "categories": 399,
-    "average_price": 6.6,
-    "sale_items": 2696,
-    "sale_rate": 15.9
-  },
   "comparison": {
-    "from_date": "2026-06-28",
-    "to_date": "2026-07-05",
-    "matched_products": 16329,
-    "coverage_percentage": 96.2,
-    "price_changes": 2109,
-    "price_increases": 1192,
-    "price_decreases": 917,
-    "unchanged_prices": 14220,
-    "new_products": 622,
-    "removed_products": 645,
-    "median_price_change_percentage": 9.1
+    "from_date": "2026-07-05",
+    "to_date": "2026-07-12",
+    "matched_products": 16351,
+    "coverage_percentage": 96.5,
+    "price_changes": 1826,
+    "price_increases": 1078,
+    "price_decreases": 748,
+    "unchanged_prices": 14525,
+    "new_products": 629,
+    "removed_products": 600,
+    "median_price_change_percentage": 13.4
   },
   "largest_decreases": [
     {
-      "upc": "00000000040655",
-      "name": "Green Peppers, 0.63 Pound",
-      "previous_price": 2.2,
-      "current_price": 0.94,
-      "change": -1.26,
-      "change_percentage": -57.3
+      "upc": "00715141503494",
+      "name": "Eggland's Best Eggs, Large, 12 count",
+      "previous_price": 5.49,
+      "current_price": 1.99,
+      "change": -3.5,
+      "change_percentage": -63.8
     },
     {
-      "upc": "00020735161234",
-      "name": "Turkey Hill Double Dunker Frozen Dairy Dessert, 1.44 qts",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
+      "upc": "00280615000002",
+      "name": "Mountaire Family Pack Chicken Cutlets",
+      "previous_price": 4.49,
+      "current_price": 1.99,
+      "change": -2.5,
+      "change_percentage": -55.7
     },
     {
-      "upc": "00020735161241",
-      "name": "Turkey Hill Choco Mint Chip Premium Ice Cream, 1.44 qts",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
+      "upc": "00063209009922",
+      "name": "Tim Hortons Original Blend Ground Coffee, 100% Arabica Medium Roast, 12oz Bag",
+      "previous_price": 12.49,
+      "current_price": 5.99,
+      "change": -6.5,
+      "change_percentage": -52.0
     },
     {
-      "upc": "00020735161258",
-      "name": "Turkey Hill Chocolate Chip Cookie Dough Frozen Dairy Dessert, 1.44 qts",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
+      "upc": "00063209072322",
+      "name": "Tim Hortons Dark Roast Ground Coffee, 100% Arabica, 12oz Bag",
+      "previous_price": 12.49,
+      "current_price": 5.99,
+      "change": -6.5,
+      "change_percentage": -52.0
     },
     {
-      "upc": "00020735161265",
-      "name": "Turkey Hill Rocky Road Frozen Dairy Dessert, 1.44 qts",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
+      "upc": "00020735161463",
+      "name": "Turkey Hill Simply Natural Vanilla Bean & Chocolate Premium Ice Cream, 1.44 qts",
+      "previous_price": 7.49,
+      "current_price": 3.74,
+      "change": -3.75,
+      "change_percentage": -50.1
     },
     {
-      "upc": "00020735161272",
-      "name": "Turkey Hill Moose Tracks Frozen Dairy Dessert, 1.44 qts",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
+      "upc": "00020735161531",
+      "name": "Turkey Hill Simply Natural Mint Chocolate Chip Premium Ice Cream, 1.44 qts",
+      "previous_price": 7.49,
+      "current_price": 3.74,
+      "change": -3.75,
+      "change_percentage": -50.1
     },
     {
-      "upc": "00020735161296",
-      "name": "Turkey Hill Fudge Ripple Frozen Dairy Dessert, 1.44 qts",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
+      "upc": "00020735161685",
+      "name": "Turkey Hill Simply Natural Vanilla Bean Premium Ice Cream, 1.44 qts",
+      "previous_price": 7.49,
+      "current_price": 3.74,
+      "change": -3.75,
+      "change_percentage": -50.1
     },
     {
-      "upc": "00020735161302",
-      "name": "Turkey Hill Peanut Butter Ripple Frozen Dairy Dessert, 1.44 qts",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
+      "upc": "00020735161692",
+      "name": "Turkey Hill Simply Natural Belgian Style Chocolate Premium Ice Cream, 1.44 qts",
+      "previous_price": 7.49,
+      "current_price": 3.74,
+      "change": -3.75,
+      "change_percentage": -50.1
     },
     {
-      "upc": "00020735161319",
-      "name": "Turkey Hill Tin Roof Sundae Frozen Dairy Dessert, 1.44 qts",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
+      "upc": "00020735161944",
+      "name": "THILL IC NTRL CFE ESPRS",
+      "previous_price": 7.49,
+      "current_price": 3.74,
+      "change": -3.75,
+      "change_percentage": -50.1
     },
     {
-      "upc": "00020735161326",
-      "name": "Turkey Hill Chocolate Peanut Butter Frozen Dairy Dessert, 1.44 qts",
+      "upc": "00041483003225",
+      "name": "KMPS SHRBT ORANGE",
       "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
+      "current_price": 3.49,
+      "change": -3.5,
+      "change_percentage": -50.1
     }
   ],
   "largest_increases": [
     {
-      "upc": "00021000024834",
-      "name": "Kraft Singles 2% Milk American Cheese Slices, 16 count, 10.7 oz",
-      "previous_price": 2.5,
-      "current_price": 6.49,
-      "change": 3.99,
-      "change_percentage": 159.6
+      "upc": "00000000040457",
+      "name": "Cherries Bing",
+      "previous_price": 3.3,
+      "current_price": 10.98,
+      "change": 7.68,
+      "change_percentage": 232.7
     },
     {
-      "upc": "00021000604647",
-      "name": "Kraft Singles American Cheese Slices, 16 count, 12 oz",
-      "previous_price": 2.5,
-      "current_price": 6.49,
-      "change": 3.99,
-      "change_percentage": 159.6
+      "upc": "00000000040785",
+      "name": "Bi-Color Corn Yellow",
+      "previous_price": 0.33,
+      "current_price": 1.0,
+      "change": 0.67,
+      "change_percentage": 203.0
     },
     {
-      "upc": "00021000604654",
-      "name": "Kraft Singles White American Cheese Slices, 16 count, 12 oz",
-      "previous_price": 2.5,
-      "current_price": 6.49,
-      "change": 3.99,
-      "change_percentage": 159.6
+      "upc": "00000000045902",
+      "name": "Bi-Color Corn",
+      "previous_price": 0.33,
+      "current_price": 1.0,
+      "change": 0.67,
+      "change_percentage": 203.0
     },
     {
-      "upc": "00220032000001",
-      "name": "NY STLHD SAL FILET",
-      "previous_price": 7.99,
-      "current_price": 16.99,
-      "change": 9.0,
-      "change_percentage": 112.6
+      "upc": "00000000045919",
+      "name": "CORN BI-COLOR",
+      "previous_price": 0.33,
+      "current_price": 1.0,
+      "change": 0.67,
+      "change_percentage": 203.0
     },
     {
-      "upc": "00041196020120",
-      "name": "Progresso Chick Peas",
-      "previous_price": 0.99,
-      "current_price": 1.99,
-      "change": 1.0,
-      "change_percentage": 101.0
-    },
-    {
-      "upc": "00041196020229",
-      "name": "Progresso Red Kidney Beans, 19 oz",
-      "previous_price": 0.99,
-      "current_price": 1.99,
-      "change": 1.0,
-      "change_percentage": 101.0
-    },
-    {
-      "upc": "00041196020243",
-      "name": "Progresso Kidney Beans, Dark Red",
-      "previous_price": 0.99,
-      "current_price": 1.99,
-      "change": 1.0,
-      "change_percentage": 101.0
-    },
-    {
-      "upc": "00041196020328",
-      "name": "Progresso Cannellini White Kidney Beans, 19 oz",
-      "previous_price": 0.99,
-      "current_price": 1.99,
-      "change": 1.0,
-      "change_percentage": 101.0
-    },
-    {
-      "upc": "00041196021240",
-      "name": "Progresso Black Bean",
-      "previous_price": 0.99,
-      "current_price": 1.99,
-      "change": 1.0,
-      "change_percentage": 101.0
-    },
-    {
-      "upc": "00074570004003",
-      "name": "H\u00e4agen-Dazs Vanilla Ice Cream, 14 fl oz",
-      "previous_price": 3.99,
-      "current_price": 7.99,
+      "upc": "00020735161234",
+      "name": "Turkey Hill Double Dunker Frozen Dairy Dessert, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
       "change": 4.0,
-      "change_percentage": 100.3
+      "change_percentage": 133.8
+    },
+    {
+      "upc": "00020735161241",
+      "name": "Turkey Hill Choco Mint Chip Premium Ice Cream, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
+    },
+    {
+      "upc": "00020735161258",
+      "name": "Turkey Hill Chocolate Chip Cookie Dough Frozen Dairy Dessert, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
+    },
+    {
+      "upc": "00020735161265",
+      "name": "Turkey Hill Rocky Road Frozen Dairy Dessert, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
+    },
+    {
+      "upc": "00020735161272",
+      "name": "Turkey Hill Moose Tracks Frozen Dairy Dessert, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
+    },
+    {
+      "upc": "00020735161296",
+      "name": "Turkey Hill Fudge Ripple Frozen Dairy Dessert, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
     }
   ],
   "history": [
@@ -268,6 +268,14 @@
       "average_price": 6.62,
       "sale_items": 2509,
       "sale_rate": 14.8
+    },
+    {
+      "snapshot_date": "2026-07-12",
+      "products": 16980,
+      "categories": 404,
+      "average_price": 6.67,
+      "sale_items": 2265,
+      "sale_rate": 13.3
     }
   ],
   "comparisons": [
@@ -374,6 +382,19 @@
       "new_products": 622,
       "removed_products": 645,
       "median_price_change_percentage": 9.1
+    },
+    {
+      "from_date": "2026-07-05",
+      "to_date": "2026-07-12",
+      "matched_products": 16351,
+      "coverage_percentage": 96.5,
+      "price_changes": 1826,
+      "price_increases": 1078,
+      "price_decreases": 748,
+      "unchanged_prices": 14525,
+      "new_products": 629,
+      "removed_products": 600,
+      "median_price_change_percentage": 13.4
     }
   ]
 }
