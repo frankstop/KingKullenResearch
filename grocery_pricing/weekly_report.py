@@ -330,7 +330,7 @@ def render_html(summary: dict[str, Any]) -> str:
   </style>
 </head>
 <body>
-<nav class="nav" aria-label="Primary"><a href="index.html">Overview</a><a href="weekly-report.html" aria-current="page">Time series</a><a href="https://frankiejvaldez.com/projects/kingkullenresearch/catalog-history/" target="_top">All items</a><a href="data/weekly-summary.json">Data contract</a><a href="https://github.com/frankstop/KingKullenResearch">Source</a></nav>
+<nav class="nav" aria-label="Primary"><a href="index.html">Overview</a><a href="weekly-report.html" aria-current="page">Time series</a><a href="https://frankiejvaldez.com/projects/kingkullenresearch/catalog-history/" target="_top">All items</a><a href="data/weekly-summary.json" target="_blank" rel="noopener">Data contract</a><a href="https://github.com/frankstop/KingKullenResearch" target="_blank" rel="noopener noreferrer">Source</a></nav>
 <header>
   <div class="eyebrow">Automated longitudinal analysis</div>
   <h1>Price time series</h1>
@@ -374,7 +374,7 @@ def render_html(summary: dict[str, Any]) -> str:
       <th>Average price</th><th>On sale</th></tr></thead><tbody>{history_rows}</tbody></table>
   </div></section>
 </main>
-<footer><a href="./">Project overview</a> · <a href="catalog-history.html">All item histories</a> · <a href="https://github.com/frankstop/KingKullenResearch">Source and raw snapshots</a></footer>
+<footer><a href="./">Project overview</a> · <a href="catalog-history.html">All item histories</a> · <a href="https://github.com/frankstop/KingKullenResearch" target="_blank" rel="noopener noreferrer">Source and raw snapshots</a></footer>
 </body>
 </html>
 """
