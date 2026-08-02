@@ -1,9 +1,17 @@
 {
   "generated_from": [
-    "2026-07-19.jsonl",
-    "2026-07-26.jsonl"
+    "2026-07-26.jsonl",
+    "2026-08-02.jsonl"
   ],
   "latest": {
+    "snapshot_date": "2026-08-02",
+    "products": 16729,
+    "categories": 408,
+    "average_price": 6.65,
+    "sale_items": 2158,
+    "sale_rate": 12.9
+  },
+  "previous": {
     "snapshot_date": "2026-07-26",
     "products": 16904,
     "categories": 403,
@@ -11,189 +19,181 @@
     "sale_items": 2272,
     "sale_rate": 13.4
   },
-  "previous": {
-    "snapshot_date": "2026-07-19",
-    "products": 16913,
-    "categories": 402,
-    "average_price": 6.64,
-    "sale_items": 2455,
-    "sale_rate": 14.5
-  },
   "comparison": {
-    "from_date": "2026-07-19",
-    "to_date": "2026-07-26",
-    "matched_products": 16296,
-    "coverage_percentage": 96.4,
-    "price_changes": 1710,
-    "price_increases": 958,
-    "price_decreases": 752,
-    "unchanged_prices": 14586,
-    "new_products": 608,
-    "removed_products": 617,
-    "median_price_change_percentage": 9.5
+    "from_date": "2026-07-26",
+    "to_date": "2026-08-02",
+    "matched_products": 16143,
+    "coverage_percentage": 95.5,
+    "price_changes": 2068,
+    "price_increases": 1204,
+    "price_decreases": 864,
+    "unchanged_prices": 14075,
+    "new_products": 586,
+    "removed_products": 761,
+    "median_price_change_percentage": 8.6
   },
   "largest_decreases": [
     {
-      "upc": "00000000030823",
-      "name": "Produce Broccoli Crowns",
-      "previous_price": 2.99,
-      "current_price": 1.29,
-      "change": -1.7,
-      "change_percentage": -56.9
+      "upc": "00840370901190",
+      "name": "Kraft Shredded Fat Free Cheddar Natural Cheese, 7 oz",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     },
     {
-      "upc": "00000000045483",
-      "name": "Fresh Broccoli Crowns",
-      "previous_price": 2.99,
-      "current_price": 1.29,
-      "change": -1.7,
-      "change_percentage": -56.9
+      "upc": "00840370901244",
+      "name": "Kraft Shredded Low-Moisture Part-Skim Natural Mozzarella Cheese, 7 oz",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     },
     {
-      "upc": "00855206005812",
-      "name": "POPDAD PRTZL CINN SGR",
-      "previous_price": 4.49,
-      "current_price": 1.99,
-      "change": -2.5,
-      "change_percentage": -55.7
+      "upc": "00840370901268",
+      "name": "Kraft Shredded Fat Free Mozzarella Natural Cheese, 7 oz",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     },
     {
-      "upc": "00070404007707",
-      "name": "Pompeian Smooth Extra Virgin Olive Oil, 25.4 fl oz",
-      "previous_price": 27.99,
-      "current_price": 12.99,
-      "change": -15.0,
-      "change_percentage": -53.6
+      "upc": "00840370901312",
+      "name": "Kraft Shredded Low-Moisture Part-Skim Mozzarella Natural Cheese, 8 oz",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     },
     {
-      "upc": "00070404007714",
-      "name": "Pompeian Robust Extra Virgin Olive Oil, 25.4 fl oz",
-      "previous_price": 27.99,
-      "current_price": 12.99,
-      "change": -15.0,
-      "change_percentage": -53.6
+      "upc": "00840370901343",
+      "name": "Kraft Finely Shredded Mexican Style Natural Four Cheese, 8 oz",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     },
     {
-      "upc": "00045300005492",
-      "name": "PETER PAN 16.3oz Creamy Peanut Butter",
-      "previous_price": 4.99,
-      "current_price": 2.49,
-      "change": -2.5,
-      "change_percentage": -50.1
+      "upc": "00840370901367",
+      "name": "Kraft Finely Shredded Sharp Natural Cheddar Cheese, 8 oz",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     },
     {
-      "upc": "00072745001079",
-      "name": "Perdue Dino Nuggets, 12 oz",
-      "previous_price": 5.99,
-      "current_price": 2.99,
-      "change": -3.0,
-      "change_percentage": -50.1
+      "upc": "00840370901497",
+      "name": "KFT SHRD SWISS",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     },
     {
-      "upc": "00072745001109",
-      "name": "Perdue Chicken Nuggets, 12 oz",
-      "previous_price": 5.99,
-      "current_price": 2.99,
-      "change": -3.0,
-      "change_percentage": -50.1
+      "upc": "00840370901565",
+      "name": "Kraft Finely Shredded Mexican Style Cheddar and Monterey Jack Natural Cheese, 8 oz",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     },
     {
-      "upc": "00072745001222",
-      "name": "Perdue Chicken Cutlets, 12 oz",
-      "previous_price": 5.99,
-      "current_price": 2.99,
-      "change": -3.0,
-      "change_percentage": -50.1
+      "upc": "00840370901589",
+      "name": "Kraft Sharp Shredded Cheddar Natural Cheese, 8 oz",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     },
     {
-      "upc": "00072745001277",
-      "name": "Perdue Chicken Popcorn, 12 oz",
-      "previous_price": 5.99,
-      "current_price": 2.99,
-      "change": -3.0,
-      "change_percentage": -50.1
+      "upc": "00840370901596",
+      "name": "Kraft Deliciously Paired Cheddar Asadero for Tacos Natural Cheese, 8 oz",
+      "previous_price": 5.49,
+      "current_price": 2.0,
+      "change": -3.49,
+      "change_percentage": -63.6
     }
   ],
   "largest_increases": [
     {
-      "upc": "00076840001743",
-      "name": "Ben & Jerry's Vanilla Non-Dairy Chocolate Chip Cookie Dough Frozen Dessert, 1 pint",
-      "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "upc": "00855206005188",
+      "name": "POPDAD PRTZL GRLC PARM",
+      "previous_price": 1.99,
+      "current_price": 4.49,
+      "change": 2.5,
+      "change_percentage": 125.6
     },
     {
-      "upc": "00076840001774",
-      "name": "Ben & Jerry's Core Chocolate Chip Cookie Dough Ice Cream, one pint",
-      "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "upc": "00855206005324",
+      "name": "POPDAD PRTZL DILL PICKLE",
+      "previous_price": 1.99,
+      "current_price": 4.49,
+      "change": 2.5,
+      "change_percentage": 125.6
     },
     {
-      "upc": "00076840002351",
-      "name": "Ben & Jerry's Vermont's Finest Gimme S'more! Ice Cream, one pint",
-      "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "upc": "00855206005812",
+      "name": "POPDAD PRTZL CINN SGR",
+      "previous_price": 1.99,
+      "current_price": 4.49,
+      "change": 2.5,
+      "change_percentage": 125.6
     },
     {
-      "upc": "00076840002368",
-      "name": "Ben & Jerry's Vermont's Finest Peanut Butter Half Baked Ice Cream, one pint",
-      "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "upc": "00070404007707",
+      "name": "Pompeian Smooth Extra Virgin Olive Oil, 25.4 fl oz",
+      "previous_price": 12.99,
+      "current_price": 27.99,
+      "change": 15.0,
+      "change_percentage": 115.5
     },
     {
-      "upc": "00076840002917",
-      "name": "Ben & Jerry's Phish Food Chocolate Non-Dairy Frozen Dessert, 1 pint",
-      "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "upc": "00070404007714",
+      "name": "Pompeian Robust Extra Virgin Olive Oil, 25.4 fl oz",
+      "previous_price": 12.99,
+      "current_price": 27.99,
+      "change": 15.0,
+      "change_percentage": 115.5
     },
     {
-      "upc": "00076840003037",
-      "name": "Ice Cream Chocolate Caramel Cookie Dough Topped",
+      "upc": "00072745001079",
+      "name": "Perdue Dino Nuggets, 12 oz",
       "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "current_price": 5.99,
+      "change": 3.0,
+      "change_percentage": 100.3
     },
     {
-      "upc": "00076840003044",
-      "name": "Ben & Jerry's Tiramisu Topped Mascarpone Ice Cream Pint 15.2 Oz",
+      "upc": "00072745001109",
+      "name": "Perdue Chicken Nuggets, 12 oz",
       "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "current_price": 5.99,
+      "change": 3.0,
+      "change_percentage": 100.3
     },
     {
-      "upc": "00076840003051",
-      "name": "Ben & Jerry's Salted Caramel Brownie Topped Ice Cream, 15.2 fl oz",
+      "upc": "00072745001222",
+      "name": "Perdue Chicken Cutlets, 12 oz",
       "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "current_price": 5.99,
+      "change": 3.0,
+      "change_percentage": 100.3
     },
     {
-      "upc": "00076840003068",
-      "name": "Ice Cream PB Over the Top Topped 15.2 oz",
+      "upc": "00072745001277",
+      "name": "Perdue Chicken Popcorn, 12 oz",
       "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "current_price": 5.99,
+      "change": 3.0,
+      "change_percentage": 100.3
     },
     {
-      "upc": "00076840003549",
-      "name": "Ben & Jerry's Dirt Cake Topped Ice Cream, 15.2 fl oz",
+      "upc": "00072745001291",
+      "name": "Perdue Chicken Tenders, 12 oz",
       "previous_price": 2.99,
-      "current_price": 7.99,
-      "change": 5.0,
-      "change_percentage": 167.2
+      "current_price": 5.99,
+      "change": 3.0,
+      "change_percentage": 100.3
     }
   ],
   "history": [
@@ -292,6 +292,14 @@
       "average_price": 6.65,
       "sale_items": 2272,
       "sale_rate": 13.4
+    },
+    {
+      "snapshot_date": "2026-08-02",
+      "products": 16729,
+      "categories": 408,
+      "average_price": 6.65,
+      "sale_items": 2158,
+      "sale_rate": 12.9
     }
   ],
   "comparisons": [
@@ -437,6 +445,19 @@
       "new_products": 608,
       "removed_products": 617,
       "median_price_change_percentage": 9.5
+    },
+    {
+      "from_date": "2026-07-26",
+      "to_date": "2026-08-02",
+      "matched_products": 16143,
+      "coverage_percentage": 95.5,
+      "price_changes": 2068,
+      "price_increases": 1204,
+      "price_decreases": 864,
+      "unchanged_prices": 14075,
+      "new_products": 586,
+      "removed_products": 761,
+      "median_price_change_percentage": 8.6
     }
   ]
 }
