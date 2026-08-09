@@ -1,9 +1,17 @@
 {
   "generated_from": [
-    "2026-07-26.jsonl",
-    "2026-08-02.jsonl"
+    "2026-08-02.jsonl",
+    "2026-08-09.jsonl"
   ],
   "latest": {
+    "snapshot_date": "2026-08-09",
+    "products": 15368,
+    "categories": 395,
+    "average_price": 6.8,
+    "sale_items": 2155,
+    "sale_rate": 14.0
+  },
+  "previous": {
     "snapshot_date": "2026-08-02",
     "products": 16729,
     "categories": 408,
@@ -11,189 +19,181 @@
     "sale_items": 2158,
     "sale_rate": 12.9
   },
-  "previous": {
-    "snapshot_date": "2026-07-26",
-    "products": 16904,
-    "categories": 403,
-    "average_price": 6.65,
-    "sale_items": 2272,
-    "sale_rate": 13.4
-  },
   "comparison": {
-    "from_date": "2026-07-26",
-    "to_date": "2026-08-02",
-    "matched_products": 16143,
-    "coverage_percentage": 95.5,
-    "price_changes": 2068,
-    "price_increases": 1204,
-    "price_decreases": 864,
-    "unchanged_prices": 14075,
-    "new_products": 586,
-    "removed_products": 761,
-    "median_price_change_percentage": 8.6
+    "from_date": "2026-08-02",
+    "to_date": "2026-08-09",
+    "matched_products": 14785,
+    "coverage_percentage": 88.4,
+    "price_changes": 1359,
+    "price_increases": 613,
+    "price_decreases": 746,
+    "unchanged_prices": 13426,
+    "new_products": 583,
+    "removed_products": 1944,
+    "median_price_change_percentage": -10.0
   },
   "largest_decreases": [
     {
-      "upc": "00840370901190",
-      "name": "Kraft Shredded Fat Free Cheddar Natural Cheese, 7 oz",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00000000040785",
+      "name": "Bi-Color Corn Yellow",
+      "previous_price": 1.0,
+      "current_price": 0.33,
+      "change": -0.67,
+      "change_percentage": -67.0
     },
     {
-      "upc": "00840370901244",
-      "name": "Kraft Shredded Low-Moisture Part-Skim Natural Mozzarella Cheese, 7 oz",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00000000045902",
+      "name": "Bi-Color Corn",
+      "previous_price": 1.0,
+      "current_price": 0.33,
+      "change": -0.67,
+      "change_percentage": -67.0
     },
     {
-      "upc": "00840370901268",
-      "name": "Kraft Shredded Fat Free Mozzarella Natural Cheese, 7 oz",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00000000045919",
+      "name": "CORN BI-COLOR",
+      "previous_price": 1.0,
+      "current_price": 0.33,
+      "change": -0.67,
+      "change_percentage": -67.0
     },
     {
-      "upc": "00840370901312",
-      "name": "Kraft Shredded Low-Moisture Part-Skim Mozzarella Natural Cheese, 8 oz",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00071537002287",
+      "name": "Polar Seltzer Water Black Cherry, 12 fl oz cans, 12 pack",
+      "previous_price": 11.99,
+      "current_price": 4.0,
+      "change": -7.99,
+      "change_percentage": -66.6
     },
     {
-      "upc": "00840370901343",
-      "name": "Kraft Finely Shredded Mexican Style Natural Four Cheese, 8 oz",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00071537002355",
+      "name": "Polar Seltzer Water Lime, 12 fl oz cans, 12 pack",
+      "previous_price": 11.99,
+      "current_price": 4.0,
+      "change": -7.99,
+      "change_percentage": -66.6
     },
     {
-      "upc": "00840370901367",
-      "name": "Kraft Finely Shredded Sharp Natural Cheddar Cheese, 8 oz",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00071537201208",
+      "name": "Polar Seltzer Water Original, 12 fl oz cans, 12 pack",
+      "previous_price": 11.99,
+      "current_price": 4.0,
+      "change": -7.99,
+      "change_percentage": -66.6
     },
     {
-      "upc": "00840370901497",
-      "name": "KFT SHRD SWISS",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00071537201239",
+      "name": "Polar Premium Mandarin Seltzer, 12 fl oz, 12 count",
+      "previous_price": 11.99,
+      "current_price": 4.0,
+      "change": -7.99,
+      "change_percentage": -66.6
     },
     {
-      "upc": "00840370901565",
-      "name": "Kraft Finely Shredded Mexican Style Cheddar and Monterey Jack Natural Cheese, 8 oz",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00071537201253",
+      "name": "Polar Seltzer Water Ruby Red Grapefruit, 12 fl oz cans, 12 pack",
+      "previous_price": 11.99,
+      "current_price": 4.0,
+      "change": -7.99,
+      "change_percentage": -66.6
     },
     {
-      "upc": "00840370901589",
-      "name": "Kraft Sharp Shredded Cheddar Natural Cheese, 8 oz",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00071537201307",
+      "name": "Polar Seltzer Water Raspberry Lime, 12 fl oz cans, 12 pack",
+      "previous_price": 11.99,
+      "current_price": 4.0,
+      "change": -7.99,
+      "change_percentage": -66.6
     },
     {
-      "upc": "00840370901596",
-      "name": "Kraft Deliciously Paired Cheddar Asadero for Tacos Natural Cheese, 8 oz",
-      "previous_price": 5.49,
-      "current_price": 2.0,
-      "change": -3.49,
-      "change_percentage": -63.6
+      "upc": "00071537201338",
+      "name": "Polar 100% Natural Pomegranate Seltzer, 12 fl oz, 12 count",
+      "previous_price": 11.99,
+      "current_price": 4.0,
+      "change": -7.99,
+      "change_percentage": -66.6
     }
   ],
   "largest_increases": [
     {
-      "upc": "00855206005188",
-      "name": "POPDAD PRTZL GRLC PARM",
-      "previous_price": 1.99,
-      "current_price": 4.49,
-      "change": 2.5,
-      "change_percentage": 125.6
+      "upc": "00840370901190",
+      "name": "Kraft Shredded Fat Free Cheddar Natural Cheese, 7 oz",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     },
     {
-      "upc": "00855206005324",
-      "name": "POPDAD PRTZL DILL PICKLE",
-      "previous_price": 1.99,
-      "current_price": 4.49,
-      "change": 2.5,
-      "change_percentage": 125.6
+      "upc": "00840370901244",
+      "name": "Kraft Shredded Low-Moisture Part-Skim Natural Mozzarella Cheese, 7 oz",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     },
     {
-      "upc": "00855206005812",
-      "name": "POPDAD PRTZL CINN SGR",
-      "previous_price": 1.99,
-      "current_price": 4.49,
-      "change": 2.5,
-      "change_percentage": 125.6
+      "upc": "00840370901268",
+      "name": "Kraft Shredded Fat Free Mozzarella Natural Cheese, 7 oz",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     },
     {
-      "upc": "00070404007707",
-      "name": "Pompeian Smooth Extra Virgin Olive Oil, 25.4 fl oz",
-      "previous_price": 12.99,
-      "current_price": 27.99,
-      "change": 15.0,
-      "change_percentage": 115.5
+      "upc": "00840370901312",
+      "name": "Kraft Shredded Low-Moisture Part-Skim Mozzarella Natural Cheese, 8 oz",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     },
     {
-      "upc": "00070404007714",
-      "name": "Pompeian Robust Extra Virgin Olive Oil, 25.4 fl oz",
-      "previous_price": 12.99,
-      "current_price": 27.99,
-      "change": 15.0,
-      "change_percentage": 115.5
+      "upc": "00840370901343",
+      "name": "Kraft Finely Shredded Mexican Style Natural Four Cheese, 8 oz",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     },
     {
-      "upc": "00072745001079",
-      "name": "Perdue Dino Nuggets, 12 oz",
-      "previous_price": 2.99,
-      "current_price": 5.99,
-      "change": 3.0,
-      "change_percentage": 100.3
+      "upc": "00840370901367",
+      "name": "Kraft Finely Shredded Sharp Natural Cheddar Cheese, 8 oz",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     },
     {
-      "upc": "00072745001109",
-      "name": "Perdue Chicken Nuggets, 12 oz",
-      "previous_price": 2.99,
-      "current_price": 5.99,
-      "change": 3.0,
-      "change_percentage": 100.3
+      "upc": "00840370901497",
+      "name": "KFT SHRD SWISS",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     },
     {
-      "upc": "00072745001222",
-      "name": "Perdue Chicken Cutlets, 12 oz",
-      "previous_price": 2.99,
-      "current_price": 5.99,
-      "change": 3.0,
-      "change_percentage": 100.3
+      "upc": "00840370901565",
+      "name": "Kraft Finely Shredded Mexican Style Cheddar and Monterey Jack Natural Cheese, 8 oz",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     },
     {
-      "upc": "00072745001277",
-      "name": "Perdue Chicken Popcorn, 12 oz",
-      "previous_price": 2.99,
-      "current_price": 5.99,
-      "change": 3.0,
-      "change_percentage": 100.3
+      "upc": "00840370901589",
+      "name": "Kraft Sharp Shredded Cheddar Natural Cheese, 8 oz",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     },
     {
-      "upc": "00072745001291",
-      "name": "Perdue Chicken Tenders, 12 oz",
-      "previous_price": 2.99,
-      "current_price": 5.99,
-      "change": 3.0,
-      "change_percentage": 100.3
+      "upc": "00840370901596",
+      "name": "Kraft Deliciously Paired Cheddar Asadero for Tacos Natural Cheese, 8 oz",
+      "previous_price": 2.0,
+      "current_price": 5.49,
+      "change": 3.49,
+      "change_percentage": 174.5
     }
   ],
   "history": [
@@ -300,6 +300,14 @@
       "average_price": 6.65,
       "sale_items": 2158,
       "sale_rate": 12.9
+    },
+    {
+      "snapshot_date": "2026-08-09",
+      "products": 15368,
+      "categories": 395,
+      "average_price": 6.8,
+      "sale_items": 2155,
+      "sale_rate": 14.0
     }
   ],
   "comparisons": [
@@ -458,6 +466,19 @@
       "new_products": 586,
       "removed_products": 761,
       "median_price_change_percentage": 8.6
+    },
+    {
+      "from_date": "2026-08-02",
+      "to_date": "2026-08-09",
+      "matched_products": 14785,
+      "coverage_percentage": 88.4,
+      "price_changes": 1359,
+      "price_increases": 613,
+      "price_decreases": 746,
+      "unchanged_prices": 13426,
+      "new_products": 583,
+      "removed_products": 1944,
+      "median_price_change_percentage": -10.0
     }
   ]
 }
