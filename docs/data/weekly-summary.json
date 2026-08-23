@@ -1,9 +1,17 @@
 {
   "generated_from": [
-    "2026-08-09.jsonl",
-    "2026-08-16.jsonl"
+    "2026-08-16.jsonl",
+    "2026-08-23.jsonl"
   ],
   "latest": {
+    "snapshot_date": "2026-08-23",
+    "products": 15837,
+    "categories": 401,
+    "average_price": 6.87,
+    "sale_items": 2246,
+    "sale_rate": 14.2
+  },
+  "previous": {
     "snapshot_date": "2026-08-16",
     "products": 16574,
     "categories": 399,
@@ -11,189 +19,181 @@
     "sale_items": 2437,
     "sale_rate": 14.7
   },
-  "previous": {
-    "snapshot_date": "2026-08-09",
-    "products": 15368,
-    "categories": 395,
-    "average_price": 6.8,
-    "sale_items": 2155,
-    "sale_rate": 14.0
-  },
   "comparison": {
-    "from_date": "2026-08-09",
-    "to_date": "2026-08-16",
-    "matched_products": 14752,
-    "coverage_percentage": 96.0,
-    "price_changes": 1767,
-    "price_increases": 862,
-    "price_decreases": 905,
-    "unchanged_prices": 12985,
-    "new_products": 1822,
-    "removed_products": 616,
-    "median_price_change_percentage": -5.7
+    "from_date": "2026-08-16",
+    "to_date": "2026-08-23",
+    "matched_products": 15284,
+    "coverage_percentage": 92.2,
+    "price_changes": 1691,
+    "price_increases": 1070,
+    "price_decreases": 621,
+    "unchanged_prices": 13593,
+    "new_products": 553,
+    "removed_products": 1290,
+    "median_price_change_percentage": 10.0
   },
   "largest_decreases": [
     {
-      "upc": "00075755413528",
-      "name": "Top Flight Composition Book, Wide Rule, 100 Sheets",
-      "previous_price": 2.99,
-      "current_price": 0.99,
-      "change": -2.0,
-      "change_percentage": -66.9
+      "upc": "00000000040563",
+      "name": "Grapes Black Seedless",
+      "previous_price": 7.98,
+      "current_price": 3.38,
+      "change": -4.6,
+      "change_percentage": -57.6
     },
     {
-      "upc": "00075755413535",
-      "name": "Top Flight Composition Book, Wide Rule",
-      "previous_price": 2.99,
-      "current_price": 0.99,
-      "change": -2.0,
-      "change_percentage": -66.9
+      "upc": "00016000121850",
+      "name": "General Mills Reese's Puffs Sweet & Crunchy Corn Puffs Large Size, 1 lb 0.7 oz",
+      "previous_price": 6.99,
+      "current_price": 2.99,
+      "change": -4.0,
+      "change_percentage": -57.2
     },
     {
-      "upc": "00000000030823",
-      "name": "Produce Broccoli Crowns",
-      "previous_price": 2.49,
-      "current_price": 0.99,
-      "change": -1.5,
-      "change_percentage": -60.2
+      "upc": "00016000124998",
+      "name": "General Mills Lucky Charms Frosted Toasted Oat Cereal with Marshmallows Large Size, 14.9 oz",
+      "previous_price": 6.99,
+      "current_price": 2.99,
+      "change": -4.0,
+      "change_percentage": -57.2
     },
     {
-      "upc": "00000000045483",
-      "name": "Fresh Broccoli Crowns",
-      "previous_price": 2.49,
-      "current_price": 0.99,
-      "change": -1.5,
-      "change_percentage": -60.2
+      "upc": "00016000125063",
+      "name": "General Mills Cheerios Honey Nut Cereal Large Size, 15.4 oz",
+      "previous_price": 6.99,
+      "current_price": 2.99,
+      "change": -4.0,
+      "change_percentage": -57.2
     },
     {
-      "upc": "00072030011912",
-      "name": "Entenmann's Cinnamon Swirl Buns, 1 lb 2 oz",
-      "previous_price": 8.79,
-      "current_price": 3.99,
-      "change": -4.8,
-      "change_percentage": -54.6
+      "upc": "00016000125933",
+      "name": "General Mills Cinnamon Toast Crunch Crispy Sweetened Whole Wheat & Rice Cereal, 1 lb 0.8 oz",
+      "previous_price": 6.99,
+      "current_price": 2.99,
+      "change": -4.0,
+      "change_percentage": -57.2
     },
     {
-      "upc": "00072030001180",
-      "name": "Entenmann's Butter French Crumb Cake, 14 oz",
-      "previous_price": 8.49,
-      "current_price": 3.99,
-      "change": -4.5,
-      "change_percentage": -53.0
+      "upc": "00052100034911",
+      "name": "McCormick Original Taco Seasoning Mix, 1 oz",
+      "previous_price": 4.49,
+      "current_price": 1.99,
+      "change": -2.5,
+      "change_percentage": -55.7
     },
     {
-      "upc": "00072030019949",
-      "name": "Entenmann's New York Style Crumb Cake, 1 lb 2 oz",
-      "previous_price": 8.49,
-      "current_price": 3.99,
-      "change": -4.5,
-      "change_percentage": -53.0
+      "upc": "00015300201354",
+      "name": "Rice A Roni Rice Vermicelli Mexican Street Corn Style Flavor 5.5 Oz",
+      "previous_price": 2.79,
+      "current_price": 1.25,
+      "change": -1.54,
+      "change_percentage": -55.2
     },
     {
-      "upc": "00072030959825",
-      "name": "Entenmann's New York Style Crumb Cake, 1 lb 1 oz",
-      "previous_price": 8.49,
-      "current_price": 3.99,
-      "change": -4.5,
-      "change_percentage": -53.0
+      "upc": "00015300201361",
+      "name": "Rice A Roni Rice Vermicelli Thai Curry Chicken Flavor 5.5 Oz",
+      "previous_price": 2.79,
+      "current_price": 1.25,
+      "change": -1.54,
+      "change_percentage": -55.2
     },
     {
-      "upc": "00072030960661",
-      "name": "Entenmann's Ultimate Madeleines Petite Butter Flavored Cakes, 8.5 oz",
-      "previous_price": 8.49,
-      "current_price": 3.99,
-      "change": -4.5,
-      "change_percentage": -53.0
+      "upc": "00015300430068",
+      "name": "Rice A Roni Rice Vermicelli Chicken & Garlic Flavor 5.9 Oz",
+      "previous_price": 2.79,
+      "current_price": 1.25,
+      "change": -1.54,
+      "change_percentage": -55.2
     },
     {
-      "upc": "00072030960692",
-      "name": "Entenmann's Black & White Ultimate Cookies, 10 count, 8 oz",
-      "previous_price": 8.49,
-      "current_price": 3.99,
-      "change": -4.5,
-      "change_percentage": -53.0
+      "upc": "00015300430235",
+      "name": "Rice A Roni Rice Vermicelli Chicken Broth And Herbs Chicken Flavor 6.9 Oz",
+      "previous_price": 2.79,
+      "current_price": 1.25,
+      "change": -1.54,
+      "change_percentage": -55.2
     }
   ],
   "largest_increases": [
     {
-      "upc": "00052100034911",
-      "name": "McCormick Original Taco Seasoning Mix, 1 oz",
-      "previous_price": 1.49,
-      "current_price": 4.49,
-      "change": 3.0,
-      "change_percentage": 201.3
+      "upc": "00075755413528",
+      "name": "Top Flight Composition Book, Wide Rule, 100 Sheets",
+      "previous_price": 0.99,
+      "current_price": 2.99,
+      "change": 2.0,
+      "change_percentage": 202.0
     },
     {
-      "upc": "00071537002287",
-      "name": "Polar Seltzer Water Black Cherry, 12 fl oz cans, 12 pack",
-      "previous_price": 4.0,
-      "current_price": 11.99,
-      "change": 7.99,
-      "change_percentage": 199.8
+      "upc": "00000000030823",
+      "name": "Produce Broccoli Crowns",
+      "previous_price": 0.99,
+      "current_price": 2.49,
+      "change": 1.5,
+      "change_percentage": 151.5
     },
     {
-      "upc": "00071537002355",
-      "name": "Polar Seltzer Water Lime, 12 fl oz cans, 12 pack",
-      "previous_price": 4.0,
-      "current_price": 11.99,
-      "change": 7.99,
-      "change_percentage": 199.8
+      "upc": "00000000045483",
+      "name": "Fresh Broccoli Crowns",
+      "previous_price": 0.99,
+      "current_price": 2.49,
+      "change": 1.5,
+      "change_percentage": 151.5
     },
     {
-      "upc": "00071537201208",
-      "name": "Polar Seltzer Water Original, 12 fl oz cans, 12 pack",
-      "previous_price": 4.0,
-      "current_price": 11.99,
-      "change": 7.99,
-      "change_percentage": 199.8
+      "upc": "00072030011912",
+      "name": "Entenmann's Cinnamon Swirl Buns, 1 lb 2 oz",
+      "previous_price": 3.99,
+      "current_price": 8.79,
+      "change": 4.8,
+      "change_percentage": 120.3
     },
     {
-      "upc": "00071537201239",
-      "name": "Polar Premium Mandarin Seltzer, 12 fl oz, 12 count",
-      "previous_price": 4.0,
-      "current_price": 11.99,
-      "change": 7.99,
-      "change_percentage": 199.8
+      "upc": "00072030001180",
+      "name": "Entenmann's Butter French Crumb Cake, 14 oz",
+      "previous_price": 3.99,
+      "current_price": 8.49,
+      "change": 4.5,
+      "change_percentage": 112.8
     },
     {
-      "upc": "00071537201253",
-      "name": "Polar Seltzer Water Ruby Red Grapefruit, 12 fl oz cans, 12 pack",
-      "previous_price": 4.0,
-      "current_price": 11.99,
-      "change": 7.99,
-      "change_percentage": 199.8
+      "upc": "00072030019949",
+      "name": "Entenmann's New York Style Crumb Cake, 1 lb 2 oz",
+      "previous_price": 3.99,
+      "current_price": 8.49,
+      "change": 4.5,
+      "change_percentage": 112.8
     },
     {
-      "upc": "00071537201307",
-      "name": "Polar Seltzer Water Raspberry Lime, 12 fl oz cans, 12 pack",
-      "previous_price": 4.0,
-      "current_price": 11.99,
-      "change": 7.99,
-      "change_percentage": 199.8
+      "upc": "00072030959825",
+      "name": "Entenmann's New York Style Crumb Cake, 1 lb 1 oz",
+      "previous_price": 3.99,
+      "current_price": 8.49,
+      "change": 4.5,
+      "change_percentage": 112.8
     },
     {
-      "upc": "00071537201338",
-      "name": "Polar 100% Natural Pomegranate Seltzer, 12 fl oz, 12 count",
-      "previous_price": 4.0,
-      "current_price": 11.99,
-      "change": 7.99,
-      "change_percentage": 199.8
+      "upc": "00072030960661",
+      "name": "Entenmann's Ultimate Madeleines Petite Butter Flavored Cakes, 8.5 oz",
+      "previous_price": 3.99,
+      "current_price": 8.49,
+      "change": 4.5,
+      "change_percentage": 112.8
     },
     {
-      "upc": "00071537201345",
-      "name": "Polar Seltzer Water Lemon, 12 fl oz cans, 12 pack",
-      "previous_price": 4.0,
-      "current_price": 11.99,
-      "change": 7.99,
-      "change_percentage": 199.8
+      "upc": "00072030960692",
+      "name": "Entenmann's Black & White Ultimate Cookies, 10 count, 8 oz",
+      "previous_price": 3.99,
+      "current_price": 8.49,
+      "change": 4.5,
+      "change_percentage": 112.8
     },
     {
-      "upc": "00071537201420",
-      "name": "Polar Seltzer Water Cranberry Lime, 12 fl oz cans, 12 pack",
-      "previous_price": 4.0,
-      "current_price": 11.99,
-      "change": 7.99,
-      "change_percentage": 199.8
+      "upc": "00072030961217",
+      "name": "Entenmann's Louisiana Crunch Cake, 1 lb 2 oz",
+      "previous_price": 3.99,
+      "current_price": 8.49,
+      "change": 4.5,
+      "change_percentage": 112.8
     }
   ],
   "history": [
@@ -316,6 +316,14 @@
       "average_price": 6.64,
       "sale_items": 2437,
       "sale_rate": 14.7
+    },
+    {
+      "snapshot_date": "2026-08-23",
+      "products": 15837,
+      "categories": 401,
+      "average_price": 6.87,
+      "sale_items": 2246,
+      "sale_rate": 14.2
     }
   ],
   "comparisons": [
@@ -500,6 +508,19 @@
       "new_products": 1822,
       "removed_products": 616,
       "median_price_change_percentage": -5.7
+    },
+    {
+      "from_date": "2026-08-16",
+      "to_date": "2026-08-23",
+      "matched_products": 15284,
+      "coverage_percentage": 92.2,
+      "price_changes": 1691,
+      "price_increases": 1070,
+      "price_decreases": 621,
+      "unchanged_prices": 13593,
+      "new_products": 553,
+      "removed_products": 1290,
+      "median_price_change_percentage": 10.0
     }
   ]
 }
