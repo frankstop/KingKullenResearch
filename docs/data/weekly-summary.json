@@ -1,9 +1,17 @@
 {
   "generated_from": [
-    "2026-08-16.jsonl",
-    "2026-08-23.jsonl"
+    "2026-08-23.jsonl",
+    "2026-08-30.jsonl"
   ],
   "latest": {
+    "snapshot_date": "2026-08-30",
+    "products": 16889,
+    "categories": 407,
+    "average_price": 6.65,
+    "sale_items": 2586,
+    "sale_rate": 15.3
+  },
+  "previous": {
     "snapshot_date": "2026-08-23",
     "products": 15837,
     "categories": 401,
@@ -11,189 +19,181 @@
     "sale_items": 2246,
     "sale_rate": 14.2
   },
-  "previous": {
-    "snapshot_date": "2026-08-16",
-    "products": 16574,
-    "categories": 399,
-    "average_price": 6.64,
-    "sale_items": 2437,
-    "sale_rate": 14.7
-  },
   "comparison": {
-    "from_date": "2026-08-16",
-    "to_date": "2026-08-23",
-    "matched_products": 15284,
-    "coverage_percentage": 92.2,
-    "price_changes": 1691,
-    "price_increases": 1070,
-    "price_decreases": 621,
-    "unchanged_prices": 13593,
-    "new_products": 553,
-    "removed_products": 1290,
-    "median_price_change_percentage": 10.0
+    "from_date": "2026-08-23",
+    "to_date": "2026-08-30",
+    "matched_products": 14737,
+    "coverage_percentage": 93.1,
+    "price_changes": 2559,
+    "price_increases": 1222,
+    "price_decreases": 1337,
+    "unchanged_prices": 12178,
+    "new_products": 2152,
+    "removed_products": 1100,
+    "median_price_change_percentage": -7.0
   },
   "largest_decreases": [
     {
-      "upc": "00000000040563",
-      "name": "Grapes Black Seedless",
-      "previous_price": 7.98,
-      "current_price": 3.38,
-      "change": -4.6,
-      "change_percentage": -57.6
+      "upc": "00075755413528",
+      "name": "Top Flight Composition Book, Wide Rule, 100 Sheets",
+      "previous_price": 2.99,
+      "current_price": 0.99,
+      "change": -2.0,
+      "change_percentage": -66.9
     },
     {
-      "upc": "00016000121850",
-      "name": "General Mills Reese's Puffs Sweet & Crunchy Corn Puffs Large Size, 1 lb 0.7 oz",
+      "upc": "00016000124790",
+      "name": "General Mills Cheerios Honey Nut Cereal, 10.8 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000125421",
+      "name": "General Mills Cheerios Apple Cinnamon Sweetened Whole Grain Oat Cereal, 11 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000125445",
+      "name": "General Mills Cheerios Fruity Sweetened Whole Grain Oat Cereal, 10.6 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000125544",
+      "name": "General Mills Cheerios Frosted Whole Grain Oat Cereal, 10.6 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000231184",
+      "name": "General Mills Cheerios Chocolate Flavored Whole Grain Oat Cereal, 11 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000232471",
+      "name": "GM CHEERIOS CONFETTI",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000275157",
+      "name": "General Mills Cheerios Multi Grain Lightly Sweetened Cereal, 9 oz",
+      "previous_price": 5.99,
+      "current_price": 2.5,
+      "change": -3.49,
+      "change_percentage": -58.3
+    },
+    {
+      "upc": "00016000275263",
+      "name": "General Mills Cheerios Toasted Whole Grain Oat Cereal, 8.9 oz",
+      "previous_price": 5.99,
+      "current_price": 2.5,
+      "change": -3.49,
+      "change_percentage": -58.3
+    },
+    {
+      "upc": "00020735161234",
+      "name": "Turkey Hill Double Dunker Frozen Dairy Dessert, 1.44 qts",
       "previous_price": 6.99,
       "current_price": 2.99,
       "change": -4.0,
       "change_percentage": -57.2
-    },
-    {
-      "upc": "00016000124998",
-      "name": "General Mills Lucky Charms Frosted Toasted Oat Cereal with Marshmallows Large Size, 14.9 oz",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
-    },
-    {
-      "upc": "00016000125063",
-      "name": "General Mills Cheerios Honey Nut Cereal Large Size, 15.4 oz",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
-    },
-    {
-      "upc": "00016000125933",
-      "name": "General Mills Cinnamon Toast Crunch Crispy Sweetened Whole Wheat & Rice Cereal, 1 lb 0.8 oz",
-      "previous_price": 6.99,
-      "current_price": 2.99,
-      "change": -4.0,
-      "change_percentage": -57.2
-    },
-    {
-      "upc": "00052100034911",
-      "name": "McCormick Original Taco Seasoning Mix, 1 oz",
-      "previous_price": 4.49,
-      "current_price": 1.99,
-      "change": -2.5,
-      "change_percentage": -55.7
-    },
-    {
-      "upc": "00015300201354",
-      "name": "Rice A Roni Rice Vermicelli Mexican Street Corn Style Flavor 5.5 Oz",
-      "previous_price": 2.79,
-      "current_price": 1.25,
-      "change": -1.54,
-      "change_percentage": -55.2
-    },
-    {
-      "upc": "00015300201361",
-      "name": "Rice A Roni Rice Vermicelli Thai Curry Chicken Flavor 5.5 Oz",
-      "previous_price": 2.79,
-      "current_price": 1.25,
-      "change": -1.54,
-      "change_percentage": -55.2
-    },
-    {
-      "upc": "00015300430068",
-      "name": "Rice A Roni Rice Vermicelli Chicken & Garlic Flavor 5.9 Oz",
-      "previous_price": 2.79,
-      "current_price": 1.25,
-      "change": -1.54,
-      "change_percentage": -55.2
-    },
-    {
-      "upc": "00015300430235",
-      "name": "Rice A Roni Rice Vermicelli Chicken Broth And Herbs Chicken Flavor 6.9 Oz",
-      "previous_price": 2.79,
-      "current_price": 1.25,
-      "change": -1.54,
-      "change_percentage": -55.2
     }
   ],
   "largest_increases": [
     {
-      "upc": "00075755413528",
-      "name": "Top Flight Composition Book, Wide Rule, 100 Sheets",
-      "previous_price": 0.99,
-      "current_price": 2.99,
-      "change": 2.0,
-      "change_percentage": 202.0
+      "upc": "00016000121850",
+      "name": "General Mills Reese's Puffs Sweet & Crunchy Corn Puffs Large Size, 1 lb 0.7 oz",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
     },
     {
-      "upc": "00000000030823",
-      "name": "Produce Broccoli Crowns",
-      "previous_price": 0.99,
-      "current_price": 2.49,
-      "change": 1.5,
-      "change_percentage": 151.5
+      "upc": "00016000124998",
+      "name": "General Mills Lucky Charms Frosted Toasted Oat Cereal with Marshmallows Large Size, 14.9 oz",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
     },
     {
-      "upc": "00000000045483",
-      "name": "Fresh Broccoli Crowns",
-      "previous_price": 0.99,
-      "current_price": 2.49,
-      "change": 1.5,
-      "change_percentage": 151.5
+      "upc": "00016000125063",
+      "name": "General Mills Cheerios Honey Nut Cereal Large Size, 15.4 oz",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
     },
     {
-      "upc": "00072030011912",
-      "name": "Entenmann's Cinnamon Swirl Buns, 1 lb 2 oz",
-      "previous_price": 3.99,
-      "current_price": 8.79,
-      "change": 4.8,
-      "change_percentage": 120.3
+      "upc": "00016000125933",
+      "name": "General Mills Cinnamon Toast Crunch Crispy Sweetened Whole Wheat & Rice Cereal, 1 lb 0.8 oz",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
     },
     {
-      "upc": "00072030001180",
-      "name": "Entenmann's Butter French Crumb Cake, 14 oz",
-      "previous_price": 3.99,
-      "current_price": 8.49,
-      "change": 4.5,
-      "change_percentage": 112.8
+      "upc": "00015300201354",
+      "name": "Rice A Roni Rice Vermicelli Mexican Street Corn Style Flavor 5.5 Oz",
+      "previous_price": 1.25,
+      "current_price": 2.79,
+      "change": 1.54,
+      "change_percentage": 123.2
     },
     {
-      "upc": "00072030019949",
-      "name": "Entenmann's New York Style Crumb Cake, 1 lb 2 oz",
-      "previous_price": 3.99,
-      "current_price": 8.49,
-      "change": 4.5,
-      "change_percentage": 112.8
+      "upc": "00015300201361",
+      "name": "Rice A Roni Rice Vermicelli Thai Curry Chicken Flavor 5.5 Oz",
+      "previous_price": 1.25,
+      "current_price": 2.79,
+      "change": 1.54,
+      "change_percentage": 123.2
     },
     {
-      "upc": "00072030959825",
-      "name": "Entenmann's New York Style Crumb Cake, 1 lb 1 oz",
-      "previous_price": 3.99,
-      "current_price": 8.49,
-      "change": 4.5,
-      "change_percentage": 112.8
+      "upc": "00015300430068",
+      "name": "Rice A Roni Rice Vermicelli Chicken & Garlic Flavor 5.9 Oz",
+      "previous_price": 1.25,
+      "current_price": 2.79,
+      "change": 1.54,
+      "change_percentage": 123.2
     },
     {
-      "upc": "00072030960661",
-      "name": "Entenmann's Ultimate Madeleines Petite Butter Flavored Cakes, 8.5 oz",
-      "previous_price": 3.99,
-      "current_price": 8.49,
-      "change": 4.5,
-      "change_percentage": 112.8
+      "upc": "00015300430235",
+      "name": "Rice A Roni Rice Vermicelli Chicken Broth And Herbs Chicken Flavor 6.9 Oz",
+      "previous_price": 1.25,
+      "current_price": 2.79,
+      "change": 1.54,
+      "change_percentage": 123.2
     },
     {
-      "upc": "00072030960692",
-      "name": "Entenmann's Black & White Ultimate Cookies, 10 count, 8 oz",
-      "previous_price": 3.99,
-      "current_price": 8.49,
-      "change": 4.5,
-      "change_percentage": 112.8
+      "upc": "00015300430242",
+      "name": "Rice Roni Cheddar Broccoli Flavor Rice, 6.5 oz",
+      "previous_price": 1.25,
+      "current_price": 2.79,
+      "change": 1.54,
+      "change_percentage": 123.2
     },
     {
-      "upc": "00072030961217",
-      "name": "Entenmann's Louisiana Crunch Cake, 1 lb 2 oz",
-      "previous_price": 3.99,
-      "current_price": 8.49,
-      "change": 4.5,
-      "change_percentage": 112.8
+      "upc": "00015300430280",
+      "name": "Rice A Roni Rice Vermicelli Beef Broth And Carrots Beef Flavor 6.8 Oz",
+      "previous_price": 1.25,
+      "current_price": 2.79,
+      "change": 1.54,
+      "change_percentage": 123.2
     }
   ],
   "history": [
@@ -324,6 +324,14 @@
       "average_price": 6.87,
       "sale_items": 2246,
       "sale_rate": 14.2
+    },
+    {
+      "snapshot_date": "2026-08-30",
+      "products": 16889,
+      "categories": 407,
+      "average_price": 6.65,
+      "sale_items": 2586,
+      "sale_rate": 15.3
     }
   ],
   "comparisons": [
@@ -521,6 +529,19 @@
       "new_products": 553,
       "removed_products": 1290,
       "median_price_change_percentage": 10.0
+    },
+    {
+      "from_date": "2026-08-23",
+      "to_date": "2026-08-30",
+      "matched_products": 14737,
+      "coverage_percentage": 93.1,
+      "price_changes": 2559,
+      "price_increases": 1222,
+      "price_decreases": 1337,
+      "unchanged_prices": 12178,
+      "new_products": 2152,
+      "removed_products": 1100,
+      "median_price_change_percentage": -7.0
     }
   ]
 }
