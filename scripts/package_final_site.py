@@ -24,6 +24,8 @@ def main():
     # Public visitors must not inherit a machine-local Codex task handoff.
     html = re.sub(r'<meta name="data-app-local-thread"[^>]*>\n?', '', html)
     html = html.replace('<title>', '<link rel="canonical" href="https://frankiejvaldez.com/KingKullenResearch/">\n<meta name="description" content="Final historical King Kullen grocery-price dashboard. Project retired September 6, 2026; data and legacy reports remain available for reference.">\n<title>', 1)
+    public_css = (root / 'site-source/public-site.css').read_text()
+    html = html.replace('</head>', '<style id="public-site-controls">\n' + public_css + '\n</style>\n</head>', 1)
     (docs / 'index.html').write_text(html)
     shutil.copy2(args.dashboard / 'dist' / build['snapshot']['path'], docs / build['snapshot']['path'])
     build['html']['sha256'] = hashlib.sha256((docs / 'index.html').read_bytes()).hexdigest()

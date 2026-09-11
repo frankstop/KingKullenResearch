@@ -1,0 +1,20 @@
+/* Public website correction requested by the owner: omit ChatGPT authoring,
+   publishing, handoff, and selection prompts from the finished presentation.
+   Keep chart exploration actions (identified by their arrow icon), source
+   inspection, filters, navigation, tables, and chart exports available. */
+.dashboard-topbar-actions,
+.dashboard-topbar-edit-controls,
+.dashboard-authoring-status,
+.dashboard-topbar .freshness,
+.dashboard-ask-mobile-scrim,
+.dashboard-ask-compose,
+.dashboard-ask-mobile-heading,
+.dashboard-ask-shared-prompt,
+.dashboard-ask-menu > button:not(:has([data-dashboard-icon="arrowUpRight"])),
+.chart-pinned-actions > button:not(:has([data-dashboard-icon="arrowUpRight"])) {
+  display: none !important;
+}
+/* A selection with no analytical action must not leave an empty AI popover. */
+.dashboard-ask-anchor:not(.chart-pinned-anchor):not(:has(.dashboard-ask-menu.is-active > button [data-dashboard-icon="arrowUpRight"])) {
+  display: none !important;
+}
