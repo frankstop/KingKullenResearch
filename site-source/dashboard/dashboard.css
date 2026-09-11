@@ -1,0 +1,9 @@
+.kk-exploration .kk-context {display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:var(--muted-foreground);font-size:13px;margin:0 0 12px;}
+.kk-exploration .kk-note {max-width:100ch;color:var(--muted-foreground);font-size:13px;line-height:1.6;margin:0 0 24px;}
+.kk-exploration .kk-back {margin-bottom:16px;}
+
+.kk-exploration .kk-retirement {position:sticky;top:calc(var(--dashboard-topbar-base-height,52px) + var(--dashboard-tabs-visible-height,0px));z-index:19;box-sizing:border-box;padding:14px 20px;margin:0 0 20px;background:#fff3cd;color:#332701;border-bottom:2px solid #ad8000;font:14px/1.5 system-ui,sans-serif;}
+.kk-exploration .kk-final-footer {display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-top:40px;padding:24px 0;border-top:1px solid var(--border);color:var(--secondary);font-size:14px;}
+.kk-exploration .kk-final-footer nav {display:flex;gap:24px;}
+.kk-exploration .kk-final-footer a {color:var(--text);text-decoration:underline;text-underline-offset:4px;padding:10px 0;}
+@media (max-width:650px){.kk-exploration .kk-retirement{padding:12px 14px;font-size:13px;}}

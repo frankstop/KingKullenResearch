@@ -3,6 +3,11 @@
 
 # 🛒 King Kullen Price Research & Pipeline
 
+The [dashboard](https://frankiejvaldez.com/KingKullenResearch/) is the **final public interface** of this completed project. It explores the historical snapshots through September 6, 2026; it does not resume collection, maintenance, support, or development. The previous frontend, reports, and searchable histories are preserved locally as the [Old Site](https://frankiejvaldez.com/KingKullenResearch/old-site/).
+
+The final planned site update promotes that dashboard and archives the legacy frontend. No further feature work is planned; only actual defects in this final presentation may be corrected. The historical setup and roadmap below do not change the retired status.
+
+
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Weekly pipeline](https://github.com/frankstop/KingKullenResearch/actions/workflows/weekly_crawl.yml/badge.svg)](https://github.com/frankstop/KingKullenResearch/actions/workflows/weekly_crawl.yml)

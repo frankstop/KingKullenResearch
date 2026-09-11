@@ -1,0 +1,568 @@
+{
+  "generated_from": [
+    "2026-08-30.jsonl",
+    "2026-09-06.jsonl"
+  ],
+  "latest": {
+    "snapshot_date": "2026-09-06",
+    "products": 16844,
+    "categories": 405,
+    "average_price": 6.62,
+    "sale_items": 2876,
+    "sale_rate": 17.1
+  },
+  "previous": {
+    "snapshot_date": "2026-08-30",
+    "products": 16889,
+    "categories": 407,
+    "average_price": 6.65,
+    "sale_items": 2586,
+    "sale_rate": 15.3
+  },
+  "comparison": {
+    "from_date": "2026-08-30",
+    "to_date": "2026-09-06",
+    "matched_products": 16490,
+    "coverage_percentage": 97.6,
+    "price_changes": 2393,
+    "price_increases": 1307,
+    "price_decreases": 1086,
+    "unchanged_prices": 14097,
+    "new_products": 354,
+    "removed_products": 399,
+    "median_price_change_percentage": 6.3
+  },
+  "largest_decreases": [
+    {
+      "upc": "00016000122222",
+      "name": "General Mills Reese's Puffs Sweet and Crunchy Corn Puffs, 11.5 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000122543",
+      "name": "General Mills Cinnamon Toast Crunch Crispy, Sweetened Whole Wheat & Rice Cereal, 12 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000123991",
+      "name": "General Mills Lucky Charms Frosted Toasted Oat Cereal with Marshmallows, 10.5 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000151635",
+      "name": "General Mills Cookie Crisp Naturally Flavored Sweetened Cereal, 10.6 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000227835",
+      "name": "General Mills Bluey Lightly Sweetened Corn Cereal, 12 oz",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000233270",
+      "name": "GM MOTTS APPLE CINN CRL",
+      "previous_price": 6.49,
+      "current_price": 2.5,
+      "change": -3.99,
+      "change_percentage": -61.5
+    },
+    {
+      "upc": "00016000151284",
+      "name": "General Mills Cocoa Puffs Naturally Flavored Frosted Corn Puffs, 10.4 oz",
+      "previous_price": 5.99,
+      "current_price": 2.5,
+      "change": -3.49,
+      "change_percentage": -58.3
+    },
+    {
+      "upc": "00016000275324",
+      "name": "General Mills Trix Fruit Flavored Sweetened Corn Puffs, 10.7 oz",
+      "previous_price": 5.99,
+      "current_price": 2.5,
+      "change": -3.49,
+      "change_percentage": -58.3
+    },
+    {
+      "upc": "00000000040785",
+      "name": "Bi-Color Corn Yellow",
+      "previous_price": 0.75,
+      "current_price": 0.33,
+      "change": -0.42,
+      "change_percentage": -56.0
+    },
+    {
+      "upc": "00000000045902",
+      "name": "Bi-Color Corn",
+      "previous_price": 0.75,
+      "current_price": 0.33,
+      "change": -0.42,
+      "change_percentage": -56.0
+    }
+  ],
+  "largest_increases": [
+    {
+      "upc": "00016000125421",
+      "name": "General Mills Cheerios Apple Cinnamon Sweetened Whole Grain Oat Cereal, 11 oz",
+      "previous_price": 2.5,
+      "current_price": 6.49,
+      "change": 3.99,
+      "change_percentage": 159.6
+    },
+    {
+      "upc": "00016000125445",
+      "name": "General Mills Cheerios Fruity Sweetened Whole Grain Oat Cereal, 10.6 oz",
+      "previous_price": 2.5,
+      "current_price": 6.49,
+      "change": 3.99,
+      "change_percentage": 159.6
+    },
+    {
+      "upc": "00016000125544",
+      "name": "General Mills Cheerios Frosted Whole Grain Oat Cereal, 10.6 oz",
+      "previous_price": 2.5,
+      "current_price": 6.49,
+      "change": 3.99,
+      "change_percentage": 159.6
+    },
+    {
+      "upc": "00016000231184",
+      "name": "General Mills Cheerios Chocolate Flavored Whole Grain Oat Cereal, 11 oz",
+      "previous_price": 2.5,
+      "current_price": 6.49,
+      "change": 3.99,
+      "change_percentage": 159.6
+    },
+    {
+      "upc": "00016000232471",
+      "name": "GM CHEERIOS CONFETTI",
+      "previous_price": 2.5,
+      "current_price": 6.49,
+      "change": 3.99,
+      "change_percentage": 159.6
+    },
+    {
+      "upc": "00020735161234",
+      "name": "Turkey Hill Double Dunker Frozen Dairy Dessert, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
+    },
+    {
+      "upc": "00020735161241",
+      "name": "Turkey Hill Choco Mint Chip Premium Ice Cream, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
+    },
+    {
+      "upc": "00020735161258",
+      "name": "Turkey Hill Chocolate Chip Cookie Dough Frozen Dairy Dessert, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
+    },
+    {
+      "upc": "00020735161265",
+      "name": "Turkey Hill Rocky Road Frozen Dairy Dessert, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
+    },
+    {
+      "upc": "00020735161272",
+      "name": "Turkey Hill Moose Tracks Frozen Dairy Dessert, 1.44 qts",
+      "previous_price": 2.99,
+      "current_price": 6.99,
+      "change": 4.0,
+      "change_percentage": 133.8
+    }
+  ],
+  "history": [
+    {
+      "snapshot_date": "2026-05-16",
+      "products": 16473,
+      "categories": 391,
+      "average_price": 6.52,
+      "sale_items": 2667,
+      "sale_rate": 16.2
+    },
+    {
+      "snapshot_date": "2026-05-17",
+      "products": 16473,
+      "categories": 391,
+      "average_price": 6.52,
+      "sale_items": 2667,
+      "sale_rate": 16.2
+    },
+    {
+      "snapshot_date": "2026-05-24",
+      "products": 16590,
+      "categories": 392,
+      "average_price": 6.5,
+      "sale_items": 2850,
+      "sale_rate": 17.2
+    },
+    {
+      "snapshot_date": "2026-05-31",
+      "products": 16496,
+      "categories": 396,
+      "average_price": 6.56,
+      "sale_items": 2345,
+      "sale_rate": 14.2
+    },
+    {
+      "snapshot_date": "2026-06-07",
+      "products": 16536,
+      "categories": 396,
+      "average_price": 6.56,
+      "sale_items": 2413,
+      "sale_rate": 14.6
+    },
+    {
+      "snapshot_date": "2026-06-14",
+      "products": 17237,
+      "categories": 397,
+      "average_price": 6.61,
+      "sale_items": 2514,
+      "sale_rate": 14.6
+    },
+    {
+      "snapshot_date": "2026-06-21",
+      "products": 16989,
+      "categories": 402,
+      "average_price": 6.58,
+      "sale_items": 2486,
+      "sale_rate": 14.6
+    },
+    {
+      "snapshot_date": "2026-06-28",
+      "products": 16974,
+      "categories": 399,
+      "average_price": 6.6,
+      "sale_items": 2696,
+      "sale_rate": 15.9
+    },
+    {
+      "snapshot_date": "2026-07-05",
+      "products": 16951,
+      "categories": 398,
+      "average_price": 6.62,
+      "sale_items": 2509,
+      "sale_rate": 14.8
+    },
+    {
+      "snapshot_date": "2026-07-12",
+      "products": 16980,
+      "categories": 404,
+      "average_price": 6.67,
+      "sale_items": 2265,
+      "sale_rate": 13.3
+    },
+    {
+      "snapshot_date": "2026-07-19",
+      "products": 16913,
+      "categories": 402,
+      "average_price": 6.64,
+      "sale_items": 2455,
+      "sale_rate": 14.5
+    },
+    {
+      "snapshot_date": "2026-07-26",
+      "products": 16904,
+      "categories": 403,
+      "average_price": 6.65,
+      "sale_items": 2272,
+      "sale_rate": 13.4
+    },
+    {
+      "snapshot_date": "2026-08-02",
+      "products": 16729,
+      "categories": 408,
+      "average_price": 6.65,
+      "sale_items": 2158,
+      "sale_rate": 12.9
+    },
+    {
+      "snapshot_date": "2026-08-09",
+      "products": 15368,
+      "categories": 395,
+      "average_price": 6.8,
+      "sale_items": 2155,
+      "sale_rate": 14.0
+    },
+    {
+      "snapshot_date": "2026-08-16",
+      "products": 16574,
+      "categories": 399,
+      "average_price": 6.64,
+      "sale_items": 2437,
+      "sale_rate": 14.7
+    },
+    {
+      "snapshot_date": "2026-08-23",
+      "products": 15837,
+      "categories": 401,
+      "average_price": 6.87,
+      "sale_items": 2246,
+      "sale_rate": 14.2
+    },
+    {
+      "snapshot_date": "2026-08-30",
+      "products": 16889,
+      "categories": 407,
+      "average_price": 6.65,
+      "sale_items": 2586,
+      "sale_rate": 15.3
+    },
+    {
+      "snapshot_date": "2026-09-06",
+      "products": 16844,
+      "categories": 405,
+      "average_price": 6.62,
+      "sale_items": 2876,
+      "sale_rate": 17.1
+    }
+  ],
+  "comparisons": [
+    {
+      "from_date": "2026-05-16",
+      "to_date": "2026-05-17",
+      "matched_products": 16473,
+      "coverage_percentage": 100.0,
+      "price_changes": 0,
+      "price_increases": 0,
+      "price_decreases": 0,
+      "unchanged_prices": 16473,
+      "new_products": 0,
+      "removed_products": 0,
+      "median_price_change_percentage": 0.0
+    },
+    {
+      "from_date": "2026-05-17",
+      "to_date": "2026-05-24",
+      "matched_products": 15850,
+      "coverage_percentage": 96.2,
+      "price_changes": 1954,
+      "price_increases": 893,
+      "price_decreases": 1061,
+      "unchanged_prices": 13896,
+      "new_products": 740,
+      "removed_products": 623,
+      "median_price_change_percentage": -11.8
+    },
+    {
+      "from_date": "2026-05-24",
+      "to_date": "2026-05-31",
+      "matched_products": 15883,
+      "coverage_percentage": 95.7,
+      "price_changes": 2732,
+      "price_increases": 1667,
+      "price_decreases": 1065,
+      "unchanged_prices": 13151,
+      "new_products": 613,
+      "removed_products": 707,
+      "median_price_change_percentage": 16.0
+    },
+    {
+      "from_date": "2026-05-31",
+      "to_date": "2026-06-07",
+      "matched_products": 15841,
+      "coverage_percentage": 96.0,
+      "price_changes": 1626,
+      "price_increases": 802,
+      "price_decreases": 824,
+      "unchanged_prices": 14215,
+      "new_products": 695,
+      "removed_products": 655,
+      "median_price_change_percentage": -4.8
+    },
+    {
+      "from_date": "2026-06-07",
+      "to_date": "2026-06-14",
+      "matched_products": 16526,
+      "coverage_percentage": 99.9,
+      "price_changes": 1872,
+      "price_increases": 903,
+      "price_decreases": 969,
+      "unchanged_prices": 14654,
+      "new_products": 711,
+      "removed_products": 10,
+      "median_price_change_percentage": -6.3
+    },
+    {
+      "from_date": "2026-06-14",
+      "to_date": "2026-06-21",
+      "matched_products": 16433,
+      "coverage_percentage": 95.3,
+      "price_changes": 1659,
+      "price_increases": 872,
+      "price_decreases": 787,
+      "unchanged_prices": 14774,
+      "new_products": 556,
+      "removed_products": 804,
+      "median_price_change_percentage": 7.2
+    },
+    {
+      "from_date": "2026-06-21",
+      "to_date": "2026-06-28",
+      "matched_products": 16417,
+      "coverage_percentage": 96.6,
+      "price_changes": 2766,
+      "price_increases": 1262,
+      "price_decreases": 1504,
+      "unchanged_prices": 13651,
+      "new_products": 557,
+      "removed_products": 572,
+      "median_price_change_percentage": -7.9
+    },
+    {
+      "from_date": "2026-06-28",
+      "to_date": "2026-07-05",
+      "matched_products": 16329,
+      "coverage_percentage": 96.2,
+      "price_changes": 2109,
+      "price_increases": 1192,
+      "price_decreases": 917,
+      "unchanged_prices": 14220,
+      "new_products": 622,
+      "removed_products": 645,
+      "median_price_change_percentage": 9.1
+    },
+    {
+      "from_date": "2026-07-05",
+      "to_date": "2026-07-12",
+      "matched_products": 16351,
+      "coverage_percentage": 96.5,
+      "price_changes": 1826,
+      "price_increases": 1078,
+      "price_decreases": 748,
+      "unchanged_prices": 14525,
+      "new_products": 629,
+      "removed_products": 600,
+      "median_price_change_percentage": 13.4
+    },
+    {
+      "from_date": "2026-07-12",
+      "to_date": "2026-07-19",
+      "matched_products": 16336,
+      "coverage_percentage": 96.2,
+      "price_changes": 1667,
+      "price_increases": 785,
+      "price_decreases": 882,
+      "unchanged_prices": 14669,
+      "new_products": 577,
+      "removed_products": 644,
+      "median_price_change_percentage": -7.0
+    },
+    {
+      "from_date": "2026-07-19",
+      "to_date": "2026-07-26",
+      "matched_products": 16296,
+      "coverage_percentage": 96.4,
+      "price_changes": 1710,
+      "price_increases": 958,
+      "price_decreases": 752,
+      "unchanged_prices": 14586,
+      "new_products": 608,
+      "removed_products": 617,
+      "median_price_change_percentage": 9.5
+    },
+    {
+      "from_date": "2026-07-26",
+      "to_date": "2026-08-02",
+      "matched_products": 16143,
+      "coverage_percentage": 95.5,
+      "price_changes": 2068,
+      "price_increases": 1204,
+      "price_decreases": 864,
+      "unchanged_prices": 14075,
+      "new_products": 586,
+      "removed_products": 761,
+      "median_price_change_percentage": 8.6
+    },
+    {
+      "from_date": "2026-08-02",
+      "to_date": "2026-08-09",
+      "matched_products": 14785,
+      "coverage_percentage": 88.4,
+      "price_changes": 1359,
+      "price_increases": 613,
+      "price_decreases": 746,
+      "unchanged_prices": 13426,
+      "new_products": 583,
+      "removed_products": 1944,
+      "median_price_change_percentage": -10.0
+    },
+    {
+      "from_date": "2026-08-09",
+      "to_date": "2026-08-16",
+      "matched_products": 14752,
+      "coverage_percentage": 96.0,
+      "price_changes": 1767,
+      "price_increases": 862,
+      "price_decreases": 905,
+      "unchanged_prices": 12985,
+      "new_products": 1822,
+      "removed_products": 616,
+      "median_price_change_percentage": -5.7
+    },
+    {
+      "from_date": "2026-08-16",
+      "to_date": "2026-08-23",
+      "matched_products": 15284,
+      "coverage_percentage": 92.2,
+      "price_changes": 1691,
+      "price_increases": 1070,
+      "price_decreases": 621,
+      "unchanged_prices": 13593,
+      "new_products": 553,
+      "removed_products": 1290,
+      "median_price_change_percentage": 10.0
+    },
+    {
+      "from_date": "2026-08-23",
+      "to_date": "2026-08-30",
+      "matched_products": 14737,
+      "coverage_percentage": 93.1,
+      "price_changes": 2559,
+      "price_increases": 1222,
+      "price_decreases": 1337,
+      "unchanged_prices": 12178,
+      "new_products": 2152,
+      "removed_products": 1100,
+      "median_price_change_percentage": -7.0
+    },
+    {
+      "from_date": "2026-08-30",
+      "to_date": "2026-09-06",
+      "matched_products": 16490,
+      "coverage_percentage": 97.6,
+      "price_changes": 2393,
+      "price_increases": 1307,
+      "price_decreases": 1086,
+      "unchanged_prices": 14097,
+      "new_products": 354,
+      "removed_products": 399,
+      "median_price_change_percentage": 6.3
+    }
+  ]
+}

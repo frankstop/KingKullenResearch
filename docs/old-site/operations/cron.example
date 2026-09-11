@@ -1,0 +1,7 @@
+# Example cron entry for a checked-out repo.
+# HITL: replace /path/to/repo with the actual absolute checkout path before use.
+#
+# Runs every day at 06:15 local machine time and appends cron output to a separate
+# log. The pipeline itself writes artifacts/pipeline.log and latest_successful_run.json.
+#
+# 15 6 * * * cd /path/to/repo && python3 -m grocery_pricing.pipeline >> artifacts/cron.log 2>&1
